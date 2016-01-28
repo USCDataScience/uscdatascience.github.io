@@ -1,0 +1,12 @@
+## USC Data Science Group
+A website for USC Information Retrieval and Data Science Group lead by [Dr. Chris Mattmann](https://github.com/chrismattmann).
+
+======
+
+#### Website
+TBA
+
+======
+
+#### Credits
+We are using [startbootstrap-scrolling-nav](https://github.com/IronSummitMedia/startbootstrap-scrolling-nav) as template.
