@@ -36,35 +36,35 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff;
+    background: #FAF9F2;
 }
 
 .about-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    background: #F0EEE6;
 }
 
 .faculty-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #fff;
+    background: #FAF9F2;
 }
 
 .students-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #fff;
+    background: #F0EEE6;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    background: #FAF9F2;
 }
 
 
