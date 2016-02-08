@@ -84,8 +84,8 @@ of those sections to manage the look and feel of the site. */
     padding: 5px;
 }
 
-.carousel,.item,.active{max-height:600px;}
-.carousel-inner{max-height:600px;}
+.carousel,.item,.active{max-height:650px;}
+.carousel-inner{max-height:650px;}
 
 
 /* Navigation Bar */
