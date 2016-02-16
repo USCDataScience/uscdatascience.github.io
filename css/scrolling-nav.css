@@ -8,6 +8,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-weight: 700;*/
 }
 
 html {
@@ -84,6 +85,37 @@ of those sections to manage the look and feel of the site. */
     padding: 5px;
 }
 
+h3 {
+  font-size: 1.4em;
+}
+
+section h2.section-heading {
+    margin-top: 10;
+    font-size: 70px;
+    color: rgb(147, 2, 1);
+    font-weight: 700;
+}
+
+.usc-color {
+  /*color: #DFB50D;*/
+  color: #FFCC00;
+}
+
+hr {
+  border-color: #FFF;
+  border-width: 2px;
+}
+
+.section-content {
+  font-size: 1.3em;
+  line-height: 1.75;
+}
+
+img {
+  margin-top: 10px;
+}
+
+/* Carousel */
 .carousel,.item,.active{max-height:650px;}
 .carousel-inner{max-height:650px;}
 
