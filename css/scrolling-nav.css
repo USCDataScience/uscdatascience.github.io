@@ -132,6 +132,12 @@ img {
 }
 
 
+@media (min-width: 1280px) {
+  .about-section, .faculty-section, .students-section {
+    height: 100%;
+  }
+}
+
 @media (max-width: 400px) {
   .carousel-caption > h3 {
     font-size: 8px;
