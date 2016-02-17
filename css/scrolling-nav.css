@@ -132,6 +132,14 @@ img {
 }
 
 
+
+.tab-content > .active {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
 @media (min-width: 1280px) {
   .about-section, .faculty-section, .students-section {
     height: 100%;
@@ -148,7 +156,7 @@ img {
 }
 
 /* Carousel */
-.carousel,.item,.active{max-height:650px;}
+.carousel,.item{max-height:650px;} 
 .carousel-inner{max-height:650px;}
 
 
