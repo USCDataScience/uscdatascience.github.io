@@ -34,35 +34,35 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 85px;
     text-align: center;
     background: #FAF9F2;
 }
 
 .about-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
     background: #F0EEE6;
 }
 
 .faculty-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
     background: #FAF9F2;
 }
 
 .students-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
     background: #F0EEE6;
 }
 
 .contact-section {
-    height: 40%;
+    /*height: 40%;*/
     padding-top: 50px;
     text-align: center;
     background: #FAF9F2;
@@ -129,6 +129,16 @@ img {
 
 .student {
   text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .carousel-caption > h3 {
+    font-size: 8px;
+  }
+  section h2.section-heading {
+    font-size: 50px;
+  }
 }
 
 /* Carousel */
