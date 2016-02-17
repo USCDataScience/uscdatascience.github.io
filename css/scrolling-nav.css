@@ -62,7 +62,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .contact-section {
-    height: 100%;
+    height: 40%;
     padding-top: 50px;
     text-align: center;
     background: #FAF9F2;
@@ -96,6 +96,13 @@ section h2.section-heading {
     font-weight: 700;
 }
 
+section h3.section-heading {
+    margin-top: 10;
+    font-size: 50px;
+    color: rgb(147, 2, 1);
+    font-weight: 500;
+}
+
 .usc-color {
   /*color: #DFB50D;*/
   color: #FFCC00;
@@ -113,6 +120,15 @@ hr {
 
 img {
   margin-top: 10px;
+}
+
+.student img {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.student {
+  text-align: center;
 }
 
 /* Carousel */
