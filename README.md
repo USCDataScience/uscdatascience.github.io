@@ -4,7 +4,7 @@ A website for USC Information Retrieval and Data Science Group lead by [Dr. Chri
 ======
 
 #### Website
-TBA
+http://irds.usc.edu
 
 ======
 

@@ -9,13 +9,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>USC - Data Science Group</title>
+    <title>I.R.D.S.</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+  
+    <!-- App CSS -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +40,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -40,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">USC - Data Science Group</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><b>I.R.D.S.</b></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,19 +60,28 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#faculty">Faculty</a>
+                        <a class="page-scroll" href="#faculty">FACULTY</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#students">Students</a>
+                        <a class="page-scroll" href="#students">STUDENTS</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#projects">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#news">NEWS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery">GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CONTACT</a>
                     </li>
                 </ul>
-                <a href="http://usc.edu" class="pull-right"><img src="./images/usc-shield-name-black.png"></a>
+                <a href="http://usc.edu" class="usc-logo pull-right"><img src="./images/usc-shield-name-white.svg" width="176px" height="38px"></a>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -72,17 +90,55 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/tommy-trojan.jpg" alt="Tommy Trojan">
+              <div class="carousel-caption">
+                <h3>USC - Information Retrieval and Data Science Group</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/prof-chris-mattmann.jpg" alt="Dr. Chris Mattmann">
+              <div class="carousel-caption">
+                <h3>USC - Information Retrieval and Data Science Group</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Back</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!--
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>USC - Data Science Group</h1>
-                    <!--
+                    
+                    
+                    <h1>USC - Information Retrieval and Data Science Group</h1>
+                    
                         <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
                         <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                    -->
+                    
                 </div>
             </div>
         </div>
+        -->
     </section>
 
     <!-- About Section -->
@@ -90,8 +146,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About the Group</h1>
-                    <p align="justify">The Information Retrieval and Data Science Group’s mission is to research and develop new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into information. We contribute to the world’s largest and most often downloaded open source software projects, we apply tried and true techniques including content detection and analysis, crawling, deduplication, similarity, named entity recognition, construction of inverted indices, query analysis, search, relevancy and ranking, interactive query analysis, and management of large data sets. We have expertise in data collection, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, Planetary Science, Astronomy, defense, and private industry.</p>
+                    <h2 class="section-heading">WHAT IS <font class="usc-color">I.R.D.S.</font>?</h2>
+                    <hr>
+                    <p class="text-justify section-content">The Information Retrieval and Data Science Group’s (I.R.D.S.) mission is to research and develop new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into information. We contribute to the world’s largest and most often downloaded open source software projects, we apply tried and true techniques including content detection and analysis, crawling, deduplication, similarity, named entity recognition, construction of inverted indices, query analysis, search, relevancy and ranking, interactive query analysis, and management of large data sets. We have expertise in data collection, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, Planetary Science, Astronomy, defense, and private industry.</p>
                 </div>
             </div>
         </div>
@@ -102,104 +159,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>USC Faculty</h1>
+                    <h2 class="section-heading"><font class="usc-color">USC</font> FACULTY</h2>
+                    <hr>
                     <div class="row">
                         <div class="col-md-4">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                            <label>Dr. Chris Mattmann</label>
+                            <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+                            <img src="images/headshots/chris-mattmann.jpg" alt=""><br/>
+                            <label>Dr. Chris Mattmann</label><br/>
+                            <a href="http://sunset.usc.edu/~mattmann">sunset.usc.edu/~mattmann</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-
-    <!-- Students Section -->
-    <section id="students" class="students-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Students</h1>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#currentstudents" aria-controls="currentstudents" role="tab" data-toggle="tab">Current</a></li>
-                        <li role="presentation"><a href="#paststudents" aria-controls="paststudents" role="tab" data-toggle="tab">Past</a></li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="currentstudents">
-                            <br/>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                    <label>Harshavardhan Manjunatha</label>
-                                    <p>M.S. Computer Science</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                    <label>Karanjeet Singh</label>
-                                    <p>M.S. Computer Science</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                    <label>Madhav Sharan</label>
-                                    <p>M.S. Computer Science</p>
-                                </div>
-                            </div>
-                            <br/>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                    <span><label>ThammeGowda Narayanaswamy</label>
-                                    <p>M.S. Computer Science</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                    <span><label>Trevor Claude Lewis</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="paststudents">
-                            <br/>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Fall 2015</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                            <label>Aditya Dhulipala</label>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                            <label>Yi-Wen Liu</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Spring 2015</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                            <label>Aakarsh Medleri Hire Math</label>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                            <label>Luke Liu</label>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/>
-                                            <label>Rishi Verma</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-8">
+                            <p class="text-justify section-content">
+                            He is a Principal Data Scientist and the Chief Architect in the Instrument and Data Systems section, at the Jet Propulsion Laboratory (JPL) in Pasadena, California and an Adjunct Associate Professor in the Computer Science Department within USC's Viterbi School of Engineering.<br/>
+                            At JPL, he developed the third generation of the Apache Object Oriented Data Technology (OODT) data processing and information integration system. OODT is an open source, data-grid middleware used across many scientific domains, such as planetary science, cancer research (go figure), and computer modeling, simulation and visualization. For more detail on OODT you can check out his ICSE 2006 paper that appeared in the Software Engineering Challenges and Achievements track and his 2009 IEEE Space Mission Challenges for Information Technology (SMC-IT) paper describing the refactorization and re-architecting of the data processing framework.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -207,15 +180,350 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+  <!-- Students Section -->
+  <section id="students" class="students-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">STUDENTS</h2>
+          <hr>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#currentstudents"
+              aria-controls="currentstudents" role="tab" data-toggle="tab">Current</a></li>
+            <li role="presentation"><a href="#paststudents" aria-controls="paststudents"
+              role="tab" data-toggle="tab">Past</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="currentstudents">
+              <br />
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="student">
+                    <img src="images/headshots/karanjeet-singh.png" alt=""><br /> <label>Karanjeet
+                      Singh</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/> -->
+                  <div class="student">
+                    <img src="images/headshots/thamme-gowda-n.png" alt=""><br /> <label>Thamme
+                      Gowda N.</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="student">
+                    <img src="images/headshots/madhav-sharan.png" alt=""><br /> <label>Madhav
+                      Sharan</label>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="student">
+                    <img src="images/headshots/harshavardhan-manjunatha.jpg" alt=""><br /> <label>Harshavardhan
+                      Manjunatha</label>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Trevor
+                    Claude Lewis</label>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="paststudents">
+              <br />
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Fall 2015</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Aditya
+                        Dhulipala</label>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Yi-Wen
+                        Liu</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Spring 2015</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Aakarsh
+                        Medleri Hire Math</label>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Luke
+                        Liu</label>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Rishi
+                        Verma</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="intro-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">PROJECTS</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel-project" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-project" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-project" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-project" data-slide-to="2"></li> -->
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- Template for one project start -->
+              <div class="col-md-6">
+                <img src="https://c2.staticflickr.com/2/1668/25400858655_5fbb4060d8_c.jpg"
+                  alt="GeoParser" class="image-fit">
+                <div class="carousel-caption">
+                  <h3>GeoParser - A geospatial extractor based on Tika</h3>
+                  <h3>
+                    <a href="https://github.com/MBoustani/GeoParser" target="_blank">https://github.com/MBoustani/GeoParser</a>
+                  </h3>
+                </div>
+              </div>
+              <!-- Template for one project ends -->
+              <div class="col-md-6">
+                <img src="https://c2.staticflickr.com/2/1608/25310171351_da0b0498af_c.jpg"
+                  alt="Khooshe" class="image-fit">
+                <div class="carousel-caption">
+                  <h3>Khooshe - Visualizing big data</h3>
+                  <h3>
+                    <a href="http://smadha.github.io/khooshe_openlayers.html" target="_blank">DEMO</a>
+                    <a href="https://github.com/MBoustani/Khooshe" target="_blank">https://github.com/MBoustani/Khooshe</a>
+                  </h3>
+                </div>
+              </div>
+
+            </div>
+            <div class="item">
+              <div class="col-md-6">
+                <img src="https://c2.staticflickr.com/2/1521/25377425506_6ae19fb5be.jpg"
+                  alt="NaMoStats" class="image-fit">
+                <div class="carousel-caption">
+                  <h3 class="font-black">IRDS analyzed elections. #HackTech2016</h3>
+                  <h3>
+                    <a
+                      href="http://devpost.com/software/namostats-analyzing-2016-us-presidential-elections-glv6df"
+                      target="_blank">NaMoStats Devpost Blog</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <p>A command line gazetteer built around the Geonames.org dataset, that uses
+                    the Apache Lucene library to create a searchable gazetter.</p>
+                  <p>The Geonames.org dataset contains over 10,000,000 geographical names
+                    corresponding to over 7,500,000 unique features. Beyond names of places in
+                    various languages, data stored include latitude, longitude, elevation,
+                    population, administrative subdivision and postal codes. All coordinates use the
+                    World Geodetic System 1984 (WGS84).</p>
+                </div>
+                <div class="row filler-height"></div>
+                <div class="row">
+                  <div class="carousel-caption">
+                    <h3>Lucene Geo-Gazetteer</h3>
+                    <h3>
+                      <a href="https://github.com/chrismattmann/lucene-geo-gazetteer"
+                        target="_blank">https://github.com/chrismattmann/lucene-geo-gazetteer</a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-project" role="button"
+              data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+              aria-hidden="true"></span> <span class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-project" role="button"
+              data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
+              aria-hidden="true"></span> <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="intro-section fix-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">NEWS</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel-news" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-news" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-news" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-news" data-slide-to="2"></li> -->
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- Template for one news start -->
+              <div class="col-md-12">
+                <img
+                  src="https://2016.foss4g-na.org/sites/all/themes/eclipsecon_base/themes/foss4g2016/logo.png"
+                  alt="GeoParser">
+                <div class="row filler-height"></div>
+                <div class="carousel-caption">
+                  <h3 class="font-black">GeoParser got selected for Foss4g North America</h3>
+                  <h3>
+                    <a href="https://2016.foss4g-na.org/session/memex-geoparser" target="_blank">Memex
+                      - GeoParser</a>
+                  </h3>
+                </div>
+              </div>
+	         <!-- Template for one news ends -->
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img src="https://pbs.twimg.com/media/Cb2LwzZUUAAj0hG.jpg" alt="WSDM">
+                <div class="carousel-caption">
+                  <h3 font-black>Professor Chris Mattmann presenting multimedia metadata based
+                    forensics at ‪#‎WSDM2016‬ conference...</h3>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-news" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
+              class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-news" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
+              class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="intro-section fix-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">GALLERY</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-gallery" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-gallery" data-slide-to="1"></li>
+            <li data-target="#carousel-gallery" data-slide-to="2"></li>
+            <li data-target="#carousel-gallery" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- Template for one gallery start -->
+              <div class="col-md-12">
+                <img src="https://c2.staticflickr.com/2/1552/25312332451_4edaa5a9b0_c.jpg" alt="Hacktech">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at ‪#HackTech2016</h3>
+                </div>
+              </div>
+              <!-- Template for one gallery ends -->
+              
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img
+                  src="https://c2.staticflickr.com/2/1559/25038051409_c4e1063885_c.jpg"
+                  alt="Bday celeb">
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img
+                  src="https://c2.staticflickr.com/2/1567/24774204134_528b6f483d_c.jpg"
+                  alt="Bday celeb">
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img
+                  src="https://c2.staticflickr.com/2/1706/25378849196_babc8326b2_z.jpg"
+                  alt="JPL meet">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
+              class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
+              class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Us</h1>
+	      <br/>
+                <div class="col-md-6">
+                    <!--<h1>Contact Us</h1>-->
+                    <h3 class="section-heading">Contact Us</h3>
                     <h4 class="section-heading">
                         <a href="mailto:mattmann@usc.edu">mattmann@usc.edu</a> or <a href="mailto:irds-L@mymaillists.usc.edu">irds-L@mymaillists.usc.edu</a>
                     </h4>
+                </div>
+                <div class="col-md-6">
+    		    <!-- <h1>Web Archives - IRDS Mailing List</h1> -->
+                    <h3 class="section-heading">Web Archives - IRDS Mailing List</h3>
+		            <p>We maintain a web archives <a href="https://mymaillists.usc.edu/sympa/arc/irds-l">here</a> of our mailing list conversations for 
+                       transparency and openness. </p>
                 </div>
             </div>
         </div>

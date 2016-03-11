@@ -7,6 +7,8 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-weight: 700;*/
 }
 
 html {
@@ -32,43 +34,241 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    padding-top: 100px;
+    /*height: 100%;*/
+    padding-top: 85px;
     text-align: center;
-    background: #fff;
+    background: #FAF9F2;
 }
 
 .about-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    background: #F0EEE6;
 }
 
 .faculty-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
-    background: #fff;
+    background: #FAF9F2;
 }
 
 .students-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
-    background: #fff;
+    background: #F0EEE6;
 }
 
 .contact-section {
-    height: 100%;
+    /*height: 40%;*/
     padding-top: 50px;
     text-align: center;
-    background: #eee;
+    background: #FAF9F2;
 }
 
 
 /* Custom CSS */
 
+@font-face { 
+    font-family: 'National'; src: url('//www.usc.edu/assets/fonts/NationalWeb-Regular.eot'); src: local(':)'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.woff') format('woff'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.ttf') format('truetype'), url('//www.usc.edu/assets/fonts/NationalWeb-Regular.svg') format('svg'); 
+    font-weight: 500; 
+    font-style: normal; 
+}
+
 .glyphicon.glyphicon-user {
     font-size: 100px;
+}
+
+.usc-logo {
+    padding: 5px;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+section h2.section-heading {
+    margin-top: 10;
+    font-size: 70px;
+    color: rgb(147, 2, 1);
+    font-weight: 700;
+}
+
+section h3.section-heading {
+    margin-top: 10;
+    font-size: 50px;
+    color: rgb(147, 2, 1);
+    font-weight: 500;
+}
+
+.usc-color {
+  /*color: #DFB50D;*/
+  color: #FFCC00;
+}
+
+hr {
+  border-color: #FFF;
+  border-width: 2px;
+}
+
+.section-content {
+  font-size: 1.3em;
+  line-height: 1.75;
+}
+
+img {
+  margin-top: 10px;
+}
+
+.student img {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.student {
+  text-align: center;
+}
+
+
+
+.tab-content > .active {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+@media (min-width: 1280px) {
+  .about-section, .faculty-section, .students-section {
+    height: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel-caption > h3 {
+    font-size: 8px;
+  }
+  section h2.section-heading {
+    font-size: 50px;
+  }
+}
+
+/* Carousel */
+.carousel,.item{max-height:650px;} 
+.carousel-inner{max-height:650px;}
+
+
+/* Navigation Bar */
+.navbar-custom {
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #990000),color-stop(1, #611306));
+  background-image: -moz-linear-gradient(center top,#990000 0%,#611306 100%);
+  background-image: -o-linear-gradient(top,#990000,#611306);
+  border-color: #e7e7e7;
+}
+.navbar-custom .navbar-brand {
+  font-size: 30px;
+  color: #FFCC00;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #FFCC00;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #FFCC00;
+}
+.navbar-custom .navbar-nav > li > a {
+  font-size: 18px;
+  color: #FFF;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #FFCC00;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #FFF;
+  background-color: #DFB50D;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  background-color: #DFB50D;
+}
+/*
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #ddd;
+}
+*/
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #DFB50D;
+}
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #DFB50D;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #FFF;
+}
+.navbar-custom .navbar-link:hover {
+  color: #333;
+}
+.navbar-custom .btn-link {
+  color: #FFF;
+}
+.navbar-custom .btn-link:hover,
+.navbar-custom .btn-link:focus {
+  color: #333;
+}
+.navbar-custom .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-custom .btn-link:hover,
+.navbar-custom .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-custom .btn-link:focus {
+  color: #ccc;
+}
+.navbar-custom .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar-custom .navbar-collapse {
+  text-align: center;
 }
