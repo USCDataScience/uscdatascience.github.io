@@ -1,0 +1,148 @@
+{
+  "profiles": {
+    "madhav": {
+      "name": "Madhav Sharan",
+      "email": "msharan@usc.edu",
+      "photo": "https://avatars1.githubusercontent.com/u/14187172?v=3&s=460",
+      "url": "http://www-scf.usc.edu/~msharan/"
+    },
+    "tg": {
+      "name": "Thamme Gowda N.",
+      "email": "thammegowda.n@usc.edu",
+      "photo": "https://s.gravatar.com/avatar/50d272e874e077d4f5ec3538241b260f?s=512",
+      "url": "http://scf.usc.edu/~tnarayan/"
+    },
+    "harsha": {
+      "name": "Harshavardhan Manjunatha",
+      "email": "hmanjuna@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/08c/2bd/3633eab.jpg",
+      "url": ""
+    },
+    "karan": {
+      "name": "Karanjeet Singh",
+      "email": "karanjes@usc.edu",
+      "photo": "",
+      "url": ""
+    },
+    "trevor": {
+      "name": "Trevor Lewis",
+      "email": "lewistre@usc.edu",
+      "photo": "https://dl.dropboxusercontent.com/content_link/x8ZOhqmNUecniwNRmAJvQhBsqe53EImZg9GNH0JMUcDiz7Lu5SyGWKhrovvcLq4a/file?dl=1",
+      "url": "http://scf.usc.edu/~lewistre/"
+    },
+    "sujen": {
+      "name": "Sujen Shah",
+      "email": "sujensha@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/061/364/0579ae8.jpg",
+      "url": "https://www.linkedin.com/in/sujenshah"
+    },
+    "manali": {
+      "name": "Manali Shah",
+      "email": "manalids@usc.edu",
+      "url": "https://drive.google.com/file/d/0B0CEd57oHMblenR6SjI4ZHNxUTA/view?usp=sharing",
+      "profile": "http://scf.usc.edu/~manalids/"
+    },
+    "sneha": {
+      "name": "Sneha Srinivasan",
+      "email": "snehasri@usc.edu",
+      "photo": "https://drive.google.com/a/usc.edu/file/d/0B-CoZVQ9E2LVZ1JUeW9vQ1NkVzg/view?usp=sharing",
+      "profile": "http://www-scf.usc.edu/~snehasri/"
+    },
+    "yunli": {
+      "name": "Yun Li",
+      "email": "yli079@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAONAAAAJDgzN2RiMGI2LWRiMzktNGQ1NC1iZjE3LTE5NjFlZmZlZjZjNg.jpg",
+      "profile": "https://www.linkedin.com/in/anyali"
+    },
+    "raghav": {
+      "name": "Raghav Bharadwaj Jayasimha Rao",
+      "email": "rjayasim@usc.edu",
+      "photo": "",
+      "profile": ""
+    },
+    "vineet": {
+      "name": "Vineet Ghatge",
+      "email": "hemantku@usc.edu",
+      "photo": "https://drive.google.com/file/d/0B7P6jmCQjFNjNUNPZnpwZUxRUjA/view?usp=sharing",
+      "profile": "http://www-scf.usc.edu/~hemantku/"
+    },
+    "sowmya": {
+      "name": "Soumya Ravi",
+      "email": "soumyara@usc.edu",
+      "photo": "https://drive.google.com/file/d/0B060DqJT1HZkOHNuTndCa2lLZUk/view?usp=sharing",
+      "profile": "http://www-scf.usc.edu/~soumyara"
+    },
+    "yiwenliu": {
+      "name": "Yi-Wen Liu",
+      "email": "yiwenliu@usc.edu",
+      "photo": "https://www.dropbox.com/s/mz6ibrebz8gpq3e/736508_585961561418602_949494464_o.jpg?dl=0",
+      "profile": "http://www-scf.usc.edu/~yiwenliu"
+    },
+    "akarsh": {
+      "name": "Aakarsh Medleri Hire Math",
+      "email": "medlerih@usc.edu",
+      "photo": "https://drive.google.com/file/d/0BxJh1xQoDd9yZHV4OURRZEZwZTQ/view?usp=sharing",
+      "profile": "http://www-scf.usc.edu/~medlerih"
+    },
+    "xuwu": {
+      "name": "Xu Wu",
+      "email": "xuwu@usc.edu",
+      "photo": "https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-ash2/v/t1.0-9/552659_1387119024848535_711700149_n.jpg?oh=34ec273e20ce8e452930d762267ce378&oe=575AB6FA",
+      "profile": "http://www.xwstudio.com"
+    }
+  },
+  "dr-students": [
+    {
+      "title": "Spring 2016",
+      "students": [
+        "sneha",
+        "raghav",
+        "trevor",
+        "sowmya",
+        "manali",
+        "xuwu"
+      ]
+    },
+    {
+      "title": "Fall 2015",
+      "students": [
+        "madhav",
+        "karan",
+        "trevor",
+        "vineet",
+        "harsha",
+        "yiwenliu"
+      ]
+    },
+    {
+      "title": "Spring 2015",
+      "students": [
+        "sujen",
+        "yunli",
+        "akarsh"
+      ]
+    }
+  ],
+  "research-assistants": {
+    "tg": [
+      "Spring 2016"
+    ],
+    "madhav": [
+      "Spring 2016"
+    ],
+    "karan": [
+      "Spring 2016"
+    ]
+  },
+  "cpt-jpl": {
+    "sujen": [
+      "Spring 2016"
+    ],
+    "harsha": [
+      "Spring 2016"
+    ],
+    "trevor": [
+      "Spring 2016"
+    ]
+  }
+}
