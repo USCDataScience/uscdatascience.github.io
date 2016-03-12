@@ -33,6 +33,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+        .student {
+            margin: 15px;
+        }
+    </style>
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -195,24 +201,9 @@
                 </div>
             </div>
             <hr/>
-
             <div>
-                <h3>Directed Research Students</h3>
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#currentstudents"
-                  aria-controls="currentstudents" role="tab" data-toggle="tab">Current</a></li>
-                <li role="presentation"><a href="#paststudents" aria-controls="paststudents"
-                  role="tab" data-toggle="tab">Past</a></li>
-              </ul>
-
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="currentstudents">
-                </div>
-                <div role="tabpanel" class="tab-pane" id="paststudents">
-                </div>
-              </div>
+                <h3>Directed Research (D.R.) Students</h3>
+                <div class="dr-students" id="dr-students"></div>
             </div>
         </div>
       </div>
@@ -480,17 +471,18 @@
         //console.log(student)
         var res = $("<div>", {"id": id, "class": "col-md-4"});
         var element = $("<div>", {"class": "student"})
-                .append($("<a>", {"href": student.url, "target": "blank"}).append(
-                        $("<img>", {"src": student.photo != null ? student.photo: "images/headshots/avatar-placeholder.svg"})))
-                .append("<br/>")
-                .append($("<label>", {"text": student.name}));
+                .append($("<a>", {"href": student.url, "target": "blank"})
+                        .append($("<img>", {"alt": student.name, "src": student.photo != null ? student.photo: "images/headshots/avatar-placeholder.svg"}))
+                        .append("<br/>")
+                        .append($("<label>", {"text": student.name}))
+                );
         if (student.email != null && student.email != ""){
             element.append("<br/>")
                     .append($("<a>", {"href": "mailto:"+student.email, "text": student.email}))
         }
         if (terms){
-            element.append("<br/>")
-            element.append(terms)
+            element.append("<br/>");
+            element.append(terms.join(", "));
         }
         res.append(element)
         return res;
@@ -516,20 +508,14 @@
   $.getJSON(url, function(data){
       console.log(data);
       var profiles = data['profiles'];
-      var currStEle = $("#currentstudents");
-      var pastStEle = $("#paststudents");
+      var drStEle = $("#dr-students");
       var drs = data['dr-students'];
       for (var i = 0; i < drs.length; i++){
           var sem = drs[i]
           var sectionEl = makeStudentsSection(sem, data)
-          if ("current" in sem && sem['current']){
-              currStEle.append(sectionEl)
-          } else {
-              pastStEle.append(sectionEl)
-          }
+          drStEle.append(sectionEl)
       }
       var rasEl = $("#ras-grid");
-
       var ras = data['ras'];
       var row;
       for (var j = 0; j < ras.length; j++){

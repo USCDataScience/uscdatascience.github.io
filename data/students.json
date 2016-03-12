@@ -107,6 +107,12 @@
       "email": null,
       "photo": null,
       "url": null
+    },
+    "annie":{
+      "name": "Annie Burgess",
+      "email": null,
+      "photo": "images/headshots/annie-burgess.png",
+      "url": null
     }
   },
   "dr-students": [
@@ -136,7 +142,7 @@
     },
     {
       "title": "Spring 2015",
-      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi"]
+      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi", "annie"]
     }
   ],
   "ras": [
@@ -144,7 +150,7 @@
     {"id": "karan", "terms": ["Spring 2016"]},
     {"id":"harsha", "terms": ["Spring 2016"]},
     {"id": "madhav", "terms": ["Spring 2016"]},
-    {"id":"trevor", "terms": ["Spring 2016"]},
-    {"id": "sujen", "terms": ["Spring 2016"]}
+    {"id": "sujen", "terms": ["Spring 2016"]},
+    {"id":"trevor", "terms": ["Spring 2016"]}
   ]
 }
