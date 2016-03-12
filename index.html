@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
 
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-  
+
     <!-- App CSS -->
     <link href="css/app.css" rel="stylesheet">
 
@@ -32,6 +32,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+        .student {
+            margin: 15px;
+        }
+    </style>
 
 </head>
 
@@ -128,13 +134,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    
-                    
+
+
                     <h1>USC - Information Retrieval and Data Science Group</h1>
-                    
+
                         <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
                         <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-                    
+
                 </div>
             </div>
         </div>
@@ -186,102 +192,19 @@
       <div class="row">
         <div class="col-lg-12">
           <h2 class="section-heading">STUDENTS</h2>
-          <hr>
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#currentstudents"
-              aria-controls="currentstudents" role="tab" data-toggle="tab">Current</a></li>
-            <li role="presentation"><a href="#paststudents" aria-controls="paststudents"
-              role="tab" data-toggle="tab">Past</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="currentstudents">
-              <br />
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="student">
-                    <img src="images/headshots/karanjeet-singh.png" alt=""><br /> <label>Karanjeet
-                      Singh</label>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <!-- <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br/> -->
-                  <div class="student">
-                    <img src="images/headshots/thamme-gowda-n.png" alt=""><br /> <label>Thamme
-                      Gowda N.</label>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="student">
-                    <img src="images/headshots/madhav-sharan.png" alt=""><br /> <label>Madhav
-                      Sharan</label>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="student">
-                    <img src="images/headshots/harshavardhan-manjunatha.jpg" alt=""><br /> <label>Harshavardhan
-                      Manjunatha</label>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Trevor
-                    Claude Lewis</label>
-                </div>
-              </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="paststudents">
-              <br />
-              <div class="panel panel-default">
+            <hr/>
+            <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Fall 2015</h3>
+                    <h3 class="panel-title">Research Assistants</h3>
                 </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Aditya
-                        Dhulipala</label>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Yi-Wen
-                        Liu</label>
-                    </div>
-                  </div>
+                <div class="panel-body" id="ras-grid">
                 </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Spring 2015</h3>
-                </div>
-                <div class="panel-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Aakarsh
-                        Medleri Hire Math</label>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Luke
-                        Liu</label>
-                    </div>
-                    <div class="col-md-4">
-                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><br /> <label>Rishi
-                        Verma</label>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="student">
-                        <img src="images/headshots/annie-burgess.png" alt=""><br /> <label>Annie
-                        Burgess</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+            <hr/>
+            <div>
+                <h3>Directed Research (D.R.) Students</h3>
+                <div class="dr-students" id="dr-students"></div>
+            </div>
         </div>
       </div>
     </div>
@@ -331,7 +254,6 @@
                   </h3>
                 </div>
               </div>
-
             </div>
             <div class="item">
               <div class="col-md-6">
@@ -428,7 +350,6 @@
                     forensics at ‪#‎WSDM2016‬ conference...</h3>
                 </div>
               </div>
-
             </div>
 
             <!-- Controls -->
@@ -475,7 +396,7 @@
                 </div>
               </div>
               <!-- Template for one gallery ends -->
-              
+
             </div>
             <div class="item">
               <div class="col-md-12">
@@ -528,7 +449,7 @@
                 <div class="col-md-6">
     		    <!-- <h1>Web Archives - IRDS Mailing List</h1> -->
                     <h3 class="section-heading">Web Archives - IRDS Mailing List</h3>
-		            <p>We maintain a web archives <a href="https://mymaillists.usc.edu/sympa/arc/irds-l">here</a> of our mailing list conversations for 
+		            <p>We maintain a web archives <a href="https://mymaillists.usc.edu/sympa/arc/irds-l">here</a> of our mailing list conversations for
                        transparency and openness. </p>
                 </div>
             </div>
@@ -544,6 +465,68 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+<script>
+    function makeStudent(id, student, terms){
+        //console.log(student)
+        var res = $("<div>", {"id": id, "class": "col-md-4"});
+        var element = $("<div>", {"class": "student"})
+                .append($("<a>", {"href": student.url, "target": "blank"})
+                        .append($("<img>", {"alt": student.name, "src": student.photo != null ? student.photo: "images/headshots/avatar-placeholder.svg"}))
+                        .append("<br/>")
+                        .append($("<label>", {"text": student.name}))
+                );
+        if (student.email != null && student.email != ""){
+            element.append("<br/>")
+                    .append($("<a>", {"href": "mailto:"+student.email, "text": student.email}))
+        }
+        if (terms){
+            element.append("<br/>");
+            element.append(terms.join(", "));
+        }
+        res.append(element)
+        return res;
+    }
+
+    function makeStudentsSection(sect, data){
+        var section = $("<div>", {'class': 'panel panel-default'});
+        var sectid = sect.title.replace(/\s+/g, '-').toLowerCase();
+        $("<div>", {"id": sectid, 'class': 'panel-heading'})
+                .append($("<h3>", {'class': 'panel-title', text: sect.title}))
+                .appendTo(section);
+        var row;
+        for (var i = 0; i < sect.students.length; i++) {
+            if (i % 3 == 0){
+                row = $("<div>", {"class": "row"}).appendTo(section);
+            }
+            makeStudent(sectid+sect.students[i], data.profiles[sect.students[i]]).appendTo(row)
+        }
+        return section
+    }
+
+  url = "data/students.json";
+  $.getJSON(url, function(data){
+      console.log(data);
+      var profiles = data['profiles'];
+      var drStEle = $("#dr-students");
+      var drs = data['dr-students'];
+      for (var i = 0; i < drs.length; i++){
+          var sem = drs[i]
+          var sectionEl = makeStudentsSection(sem, data)
+          drStEle.append(sectionEl)
+      }
+      var rasEl = $("#ras-grid");
+      var ras = data['ras'];
+      var row;
+      for (var j = 0; j < ras.length; j++){
+          if (j % 3 == 0){
+              row = $("<div>", {"class": "row"}).appendTo(rasEl);
+          }
+          makeStudent("ra-"+ras[j].id, data.profiles[ras[j].id], ras[j].terms)
+                  .appendTo(row)
+      }
+  })
+ </script>
 
 </body>
 
