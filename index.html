@@ -147,7 +147,7 @@
         </div>
         -->
     </section>
-
+    <div>
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
@@ -160,7 +160,9 @@
             </div>
         </div>
     </section>
+    </div>
 
+    <div>
     <!-- Faculty Section -->
     <section id="faculty" class="faculty-section">
         <div class="container">
@@ -186,8 +188,9 @@
             </div>
         </div>
     </section>
-
+    </div>
   <!-- Students Section -->
+    <div>
   <section id="students" class="students-section">
     <div class="container">
       <div class="row">
@@ -210,8 +213,9 @@
       </div>
     </div>
   </section>
-
+    </div>
   <!-- Projects Section -->
+    <div>
   <section id="projects" class="intro-section">
     <div class="container">
       <div class="row">
@@ -305,6 +309,7 @@
       </div>
     </div>
   </section>
+    </div>
 
   <!-- News Section -->
   <section id="news" class="intro-section fix-height">
@@ -507,7 +512,7 @@
 
   url = "data/students.json";
   $.getJSON(url, function(data){
-      console.log(data);
+      //console.log(data);
       var profiles = data['profiles'];
       var drStEle = $("#dr-students");
       var drs = data['dr-students'];
