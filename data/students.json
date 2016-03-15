@@ -113,6 +113,12 @@
       "email": null,
       "photo": "images/headshots/annie-burgess.png",
       "url": null
+    },
+    "jane":{
+      "name": "Jane Wyngaard",
+      "email": null,
+      "photo": "images/headshots/wyngaard1.png",
+      "url": "http://sunset.usc.edu/~jwyngaar/"
     }
   },
   "dr-students": [
@@ -143,6 +149,10 @@
     {
       "title": "Spring 2015",
       "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi", "annie"]
+    },
+	{
+      "title": "Post Doctoral Scholars",
+      "students": [ "jane"]
     }
   ],
   "ras": [
