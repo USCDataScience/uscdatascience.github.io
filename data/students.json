@@ -148,11 +148,11 @@
     },
     {
       "title": "Spring 2015",
-      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi", "annie"]
+      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi"]
     },
 	{
       "title": "Post Doctoral Scholars",
-      "students": [ "jane"]
+      "students": [ "jane", "annie"]
     }
   ],
   "ras": [
