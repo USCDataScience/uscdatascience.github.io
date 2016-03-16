@@ -119,7 +119,13 @@
       "email": null,
       "photo": "images/headshots/wyngaard1.png",
       "url": "http://sunset.usc.edu/~jwyngaar/"
-    }
+    },
+    "jihyun" : {
+      "name": "Ji-Hyun Oh",
+      "email" : null,
+      "photo": "images/headshots/jihyun-oh.png",
+      "url" : null
+   }
   },
   "dr-students": [
     {
@@ -152,7 +158,7 @@
     },
 	{
       "title": "Post Doctoral Scholars",
-      "students": [ "jane", "annie"]
+      "students": [ "jane", "jihyun", "annie"]
     }
   ],
   "ras": [
