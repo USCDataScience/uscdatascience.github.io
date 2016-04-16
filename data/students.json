@@ -125,7 +125,37 @@
       "email" : null,
       "photo": "images/headshots/jihyun-oh.png",
       "url" : null
-   }
+   },
+     "lorraine" : {
+       "name": "Lorraine Sposto",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "jonathan" : {
+       "name": "Jonathan Luu",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "ruthvik" : {
+       "name": "Ruthvik Peddawandla",
+       "email" : null,
+       "photo": "images/headshots/ruthvik-peddawandla.png",
+       "url" : "http://ruthvik.com"
+    },
+     "titus" : {
+       "name": "Titus Jung",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "janet" : {
+       "name": "Janet Kim",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    }
   },
   "dr-students": [
     {
@@ -156,9 +186,13 @@
       "title": "Spring 2015",
       "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi"]
     },
-	{
+	  {
       "title": "Post Doctoral Scholars",
       "students": [ "jane", "jihyun", "annie"]
+    },
+	  {
+      "title": "Undergraduate Students",
+      "students": [ "lorraine", "jonathan", "ruthvik", "titus", "janet"]
     }
   ],
   "ras": [
