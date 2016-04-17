@@ -155,6 +155,30 @@
        "email" : null,
        "photo": null,
        "url" : null
+    },
+     "daler" : {
+       "name": "Daler Asrorov",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "junsuh" : {
+       "name": "Jun Suh Lee",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "steven" : {
+       "name": "Steven Francus",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "emily" :	{
+       "name": "Emily (Zhi Fei) Liu",
+       "email" : null,
+       "photo": null,
+       "url" : null
     }
   },
   "dr-students": [
@@ -190,9 +214,13 @@
       "title": "Post Doctoral Scholars",
       "students": [ "jane", "jihyun", "annie"]
     },
-	  {
-      "title": "Undergraduate Students",
+    {
+      "title": "Undergraduate Students - 2016",
       "students": [ "lorraine", "jonathan", "ruthvik", "titus", "janet"]
+    },
+    {
+      "title" : "Undergraduate Students - 2015",
+      "students" : ["daler", "junsuh", "steven", "emily"]
     }
   ],
   "ras": [
