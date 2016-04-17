@@ -129,8 +129,8 @@
      "lorraine" : {
        "name": "Lorraine Sposto",
        "email" : null,
-       "photo": null,
-       "url" : null
+       "photo": "images/headshots/lorraine-sposto.png",
+       "url" : "www.linkedin.com/in/lorrainesposto"
     },
      "jonathan" : {
        "name": "Jonathan Luu",
