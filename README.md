@@ -1,5 +1,5 @@
 ## USC Data Science Group
-A website for USC Information Retrieval and Data Science Group lead by [Dr. Chris Mattmann](https://github.com/chrismattmann).
+A website for USC Information Retrieval and Data Science Group led by [Dr. Chris Mattmann](https://github.com/chrismattmann).
 
 ======
 
