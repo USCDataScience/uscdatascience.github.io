@@ -30,6 +30,12 @@
       "photo": null,
       "url": "http://scf.usc.edu/~lewistre/"
     },
+    "dongni": {
+      "name": "Dongni Zhao",
+      "email": "dongnizh@usc.edu",
+      "photo": null,
+      "url": null
+    },
     "sujen": {
       "name": "Sujen Shah",
       "email": "sujensha@usc.edu",
@@ -199,7 +205,6 @@
         "madhav",
         "karan",
         "trevor",
-        "vineet",
         "harsha",
         "yiwenliu",
         "adithya"
@@ -207,7 +212,7 @@
     },
     {
       "title": "Spring 2015",
-      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi"]
+      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "dongni", "vineet", "rishi"]
     },
 	  {
       "title": "Post Doctoral Scholars",
