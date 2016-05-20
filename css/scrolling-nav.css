@@ -41,14 +41,14 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    /*height: 100%;*/
+    height: 100%;
     padding-top: 50px;
     text-align: center;
     background: #F0EEE6;
 }
 
 .faculty-section {
-    /*height: 100%;*/
+    height: 100%;
     padding-top: 50px;
     text-align: center;
     background: #FAF9F2;
@@ -83,6 +83,7 @@ of those sections to manage the look and feel of the site. */
 
 .usc-logo {
     padding: 5px;
+    margin-top:-10px;
 }
 
 h3 {
