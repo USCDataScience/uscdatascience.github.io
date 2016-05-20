@@ -137,6 +137,10 @@ img {
   height: 450px;
 }
 
+.project-item {
+  min-height: 400px;
+}
+
 #projects .carousel-caption h3 {
   font-size: 1.1em;
 }
@@ -165,8 +169,8 @@ img {
 }
 
 /* Carousel */
-.carousel,.item{max-height:650px;} 
-.carousel-inner{max-height:650px;}
+#intro .carousel, #intro .item{max-height:650px;} 
+#intro .carousel-inner{max-height:650px;}
 
 
 /* Navigation Bar */
