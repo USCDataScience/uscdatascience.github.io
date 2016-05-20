@@ -154,7 +154,10 @@ img {
   width: 100%;
 }
 
-
+p.news-item {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 @media (min-width: 1280px) {
   .about-section, .faculty-section, .students-section {
