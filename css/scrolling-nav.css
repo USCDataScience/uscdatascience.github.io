@@ -41,14 +41,14 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
     background: #F0EEE6;
 }
 
 .faculty-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 50px;
     text-align: center;
     background: #FAF9F2;
@@ -132,6 +132,14 @@ img {
   text-align: center;
 }
 
+.project-image {
+  width: 550px;
+  height: 450px;
+}
+
+#projects .carousel-caption h3 {
+  font-size: 1.1em;
+}
 
 
 .tab-content > .active {
