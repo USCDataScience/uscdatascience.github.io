@@ -196,6 +196,13 @@
   "dr-students": [
     {
       "current" : true,
+      "title" : "Summer 2016",
+      "students" : [
+        "anastasija"
+       ]
+    }
+    {
+      "current" : false,
       "title": "Spring 2016",
       "students": [
         "manali",
@@ -203,7 +210,6 @@
         "sowmya",
         "xuwu",
         "raghav",
-		"anastasija"
       ]
     },
     {
