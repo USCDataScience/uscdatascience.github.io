@@ -65,7 +65,7 @@ of those sections to manage the look and feel of the site. */
     /*height: 40%;*/
     padding-top: 50px;
     text-align: center;
-    background: #FAF9F2;
+    background: #F0EEE6;
 }
 
 
@@ -83,6 +83,7 @@ of those sections to manage the look and feel of the site. */
 
 .usc-logo {
     padding: 5px;
+    margin-top:-10px;
 }
 
 h3 {
@@ -131,14 +132,32 @@ img {
   text-align: center;
 }
 
+.project-image {
+  width: 550px;
+  height: 450px;
+}
 
+.project-item {
+  min-height: 400px;
+}
+
+#projects .carousel-caption h3, #news .carousel-caption h3 {
+  font-size: 1.1em;
+}
+
+.news-item {
+  max-height: 500px;
+}
 
 .tab-content > .active {
   display: inline-block;
   width: 100%;
 }
 
-
+p.news-item {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 @media (min-width: 1280px) {
   .about-section, .faculty-section, .students-section {
@@ -156,8 +175,11 @@ img {
 }
 
 /* Carousel */
-.carousel,.item{max-height:650px;} 
-.carousel-inner{max-height:650px;}
+#intro .carousel, #intro .item{max-height:650px;} 
+#intro .carousel-inner{max-height:650px;}
+
+
+#news .carousel, #news .item, #news .carousel-inner, #gallery .carousel, #gallery .item, #gallery .carousel-inner{min-height:500px; max-height:500px;} 
 
 
 /* Navigation Bar */

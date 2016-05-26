@@ -16,7 +16,7 @@
       "name": "Harshavardhan Manjunatha",
       "email": "hmanjuna@usc.edu",
       "photo": "images/headshots/harshavardhan-manjunatha.jpg",
-      "url": null
+      "url": "https://www.linkedin.com/in/harshavardhanmanjunatha"
     },
     "karan": {
       "name": "Karanjeet Singh",
@@ -29,6 +29,12 @@
       "email": "lewistre@usc.edu",
       "photo": null,
       "url": "http://scf.usc.edu/~lewistre/"
+    },
+    "dongni": {
+      "name": "Dongni Zhao",
+      "email": "dongnizh@usc.edu",
+      "photo": null,
+      "url": null
     },
     "sujen": {
       "name": "Sujen Shah",
@@ -45,7 +51,7 @@
     "sneha": {
       "name": "Sneha Srinivasan",
       "email": "snehasri@usc.edu",
-      "photo": "images/headshots/sneha-srinivasan.png",
+      "photo": "images/headshots/sneha-srinivasan.jpeg",
       "url": "http://www-scf.usc.edu/~snehasri/"
     },
     "yunli": {
@@ -57,8 +63,8 @@
     "raghav": {
       "name": "Raghav Bharadwaj Jayasimha Rao",
       "email": "rjayasim@usc.edu",
-      "photo": null,
-      "url": null
+      "photo": "images/headshots/raghav.jpg",
+      "url": "http://www.linkedin.com/in/raghavbharadwaj"
     },
     "vineet": {
       "name": "Vineet Ghatge",
@@ -113,19 +119,104 @@
       "email": null,
       "photo": "images/headshots/annie-burgess.png",
       "url": null
+    },
+    "jane":{
+      "name": "Jane Wyngaard",
+      "email": null,
+      "photo": "images/headshots/wyngaard1.png",
+      "url": "http://sunset.usc.edu/~jwyngaar/"
+    },
+    "jihyun" : {
+      "name": "Ji-Hyun Oh",
+      "email" : null,
+      "photo": "images/headshots/jihyun-oh.png",
+      "url" : null
+   },
+     "lorraine" : {
+       "name": "Lorraine Sposto",
+       "email" : null,
+       "photo": "images/headshots/lorraine-sposto.png",
+       "url" : "www.linkedin.com/in/lorrainesposto"
+    },
+     "jonathan" : {
+       "name": "Jonathan Luu",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "ruthvik" : {
+       "name": "Ruthvik Peddawandla",
+       "email" : null,
+       "photo": "images/headshots/ruthvik-peddawandla.png",
+       "url" : "http://ruthvik.com"
+    },
+     "titus" : {
+       "name": "Titus Jung",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "janet" : {
+       "name": "Janet Kim",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "daler" : {
+       "name": "Daler Asrorov",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "junsuh" : {
+       "name": "Jun Suh Lee",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "steven" : {
+       "name": "Steven Francus",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+     "emily" :	{
+       "name": "Emily (Zhi Fei) Liu",
+       "email" : null,
+       "photo": null,
+       "url" : null
+    },
+    "anastasija": {
+      "name": "Anastasija Mensikova",
+      "email": "mensikova.anastasija@gmail.com",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQMAAAAJGRhZWI5OTFlLTVmM2UtNDQ5OS1iZTE2LTM3MDYxNTgxMTExNA.jpg",
+      "url": "www.linkedin.com/in/amensikova"
+    },
+    "aravind": {
+      "name": "Aravind Ram Nathan",
+      "email": "anathan@usc.edu",
+      "photo": "images/headshots/aravind-ram-nathan.png",
+      "url": "https://www.linkedin.com/in/aravindramnathan"
     }
   },
   "dr-students": [
     {
       "current" : true,
+      "title" : "Summer 2016",
+      "students" : [
+        "anastasija",
+        "aravind"
+       ]
+    },
+    {
+      "current" : false,
       "title": "Spring 2016",
       "students": [
         "manali",
         "sneha",
         "sowmya",
         "xuwu",
-        "raghav",
-        "trevor"
+        "raghav"
       ]
     },
     {
@@ -134,7 +225,6 @@
         "madhav",
         "karan",
         "trevor",
-        "vineet",
         "harsha",
         "yiwenliu",
         "adithya"
@@ -142,7 +232,19 @@
     },
     {
       "title": "Spring 2015",
-      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "rishi", "annie"]
+      "students": [ "sujen", "yunli", "akarsh", "lukeliu", "dongni", "vineet", "rishi"]
+    },
+	  {
+      "title": "Post Doctoral Scholars",
+      "students": [ "jane", "jihyun", "annie"]
+    },
+    {
+      "title": "Undergraduate Students - 2016",
+      "students": [ "lorraine", "jonathan", "ruthvik", "titus", "janet"]
+    },
+    {
+      "title" : "Undergraduate Students - 2015",
+      "students" : ["daler", "junsuh", "steven", "emily"]
     }
   ],
   "ras": [
