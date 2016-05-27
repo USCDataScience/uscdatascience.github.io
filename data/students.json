@@ -203,6 +203,12 @@
     	"email": "zaranaparekh17@gmail.com",
     	"photo": null,
     	"url": null
+    },
+    "nithin":{
+      "name": "Nithin Krishna",
+      "email": "ottiling@usc.edu",
+      "photo": "http://en.gravatar.com/userimage/59637524/20190eaf998a97bf86e23e9e0102ed21.jpg?size=500",
+      "url": "https://www.linkedin.com/in/nithinkrishh"
     }
   },
   "dr-students": [
@@ -212,7 +218,8 @@
       "students" : [
         "anastasija",
         "aravind",
-        "zarana"
+        "zarana",
+        "nithin"
        ]
     },
     {
