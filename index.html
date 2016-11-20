@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,6 +53,17 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Facebook JS SDK-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=209604709449328";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <!-- Facebook SDK-->
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -140,21 +150,6 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <!--
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-
-                    <h1>USC - Information Retrieval and Data Science Group</h1>
-
-                        <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                        <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-
-                </div>
-            </div>
-        </div>
-        -->
     </section>
 
     <!-- About Section -->
@@ -169,7 +164,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Faculty Section -->
     <section id="faculty" class="faculty-section">
@@ -197,34 +191,52 @@
         </div>
     </section>
 
-  <!-- Students Section -->
-    <div>
-  <section id="students" class="students-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="section-heading">STUDENTS</h2>
-            <hr/>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Research Assistants</h3>
+    <div class="row center-block" style="float:none">
+      <div class="col-md-5">
+        <div>
+          <a class="twitter-timeline" href="https://twitter.com/USCDataScience"></a>
+           <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+           </script>
+        </div>
+        <div>
+          <div id="facebook-page" class="about-section fix-height">
+              <div class="fb-page" data-href="https://www.facebook.com/USCDataScience/"
+                    data-tabs="timeline" data-width="500px"
+                     data-height="1024px" data-small-header="true"
+                     data-adapt-container-width="false" data-hide-cover="false"
+                     data-show-facepile="false"><blockquote cite="https://www.facebook.com/USCDataScience/"
+                     class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/USCDataScience/">USC Information Retrieval and Data Science</a></blockquote>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div>
+          <div id="students" class="students-section">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="section-heading">STUDENTS</h2>
+                    <hr/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Research Assistants</h3>
+                        </div>
+                        <div class="panel-body" id="ras-grid">
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3>Directed Research (D.R.) Students</h3>
+                        <div class="dr-students" id="dr-students"></div>
+                    </div>
                 </div>
-                <div class="panel-body" id="ras-grid">
-                </div>
-            </div>
-            <hr/>
-            <div>
-                <h3>Directed Research (D.R.) Students</h3>
-                <div class="dr-students" id="dr-students"></div>
-            </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-    </div>
-  <!-- Projects Section -->
- 
-  <section id="projects" class="faculty-section">
+  <section id="projects" class="projects-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -254,7 +266,7 @@
                 <img src="https://c2.staticflickr.com/2/1608/25310171351_da0b0498af_c.jpg"
                   alt="Khooshe" class="image-fit">
                 <div class="carousel-caption">
-                  <h3>Khooshe - Visualizing Big Data 
+                  <h3>Khooshe - Visualizing Big Data
                     <a href="http://smadha.github.io/khooshe_openlayers.html" target="_blank">(DEMO)</a> </h3>
                     <a href="https://github.com/MBoustani/Khooshe" target="_blank">https://github.com/MBoustani/Khooshe</a>
                   </h3>
@@ -337,8 +349,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- News Section -->
+
   <section id="news" class="about-section fix-height">
     <div class="container">
       <div class="row">
@@ -347,12 +358,11 @@
           <hr>
         </div>
       </div>
+
       <div class="row">
         <div id="carousel-news" class="carousel slide" data-ride="carousel">
-
-          <!-- Wrapper for slides -->     
           <div class="carousel-inner" role="listbox">
-	         
+
               <div class="item active">
                 <div class="col-md-12">
                   <div class="col-md-12">
@@ -361,7 +371,7 @@
                       <img class="news-item" src="https://facultyjobs.utexas.edu/img/phase2/RGB_university_primary.png" style="width:480px; height:230px"
                         alt="The University of Texas, Austin">
                   </div>
-                  
+
                   <h3>TACC Summer Supercomputing Institute (SSI)</h3> <br/>
                   <p class="text-justify news-item">
                     TACC's SSI is a week-long workshop which introduces researchers, faculty, staff, students, and industrial partners to high performance computing, data analytics, and scientific visualization. TACC's technology experts will teach attendees how to effectively use advanced computing resources and technologies like Stampede, Maverick, and Wrangler.
@@ -375,11 +385,9 @@
                     </h3>
                   </div>
               </div>
-              <!-- Template for one news ends -->
             </div>
 
             <div class="item">
-              <!-- Template for one news start -->
               <div class="col-md-12">
                 <img class="news-item" src="http://news.usc.edu/files/2016/05/DG_Mattmann_web-412x618.gif"
                   alt="Apache Tika and Panama Papers">
@@ -390,15 +398,11 @@
                   </h3>
                 </div>
               </div>
-              <!-- Template for one news ends -->
 	         </div>
-
-
           <div class="item">
-              <!-- Template for one news start -->
               <div class="col-md-12">
                 <br/><br/><br/><br/><br/><br/>
-                <img class="news-item" 
+                <img class="news-item"
                   src="http://events.linuxfoundation.org/sites/events/files/lfe_aconna_logodsv2.png"
                   alt="DRAT ApacheCon NA">
                 <div class="row filler-height"></div>
@@ -410,13 +414,10 @@
                 </div>
               </div>
           </div>
-
-	         
           <div class="item">
-              <!-- Template for one news start -->
               <div class="col-md-12">
                 <br/><br/><br/><br/><br/><br/>
-                <img class="news-item" 
+                <img class="news-item"
                   src="http://events.linuxfoundation.org/sites/events/files/lfe_aconna_logodsv2.png"
                   alt="Clustering ApacheCon NA">
                 <div class="row filler-height"></div>
@@ -428,14 +429,10 @@
                 </div>
               </div>
           </div>
-           <!-- Template for one news ends -->
-
-
             <div class="item">
-              <!-- Template for one news start -->
               <div class="col-md-12">
                 <br/><br/><br/><br/><br/><br/>
-                <img class="news-item" 
+                <img class="news-item"
                   src="https://2016.foss4g-na.org/sites/all/themes/eclipsecon_base/themes/foss4g2016/logo.png"
                   alt="GeoParser">
                 <div class="row filler-height"></div>
@@ -447,9 +444,7 @@
                   </h3>
                 </div>
               </div>
-	         <!-- Template for one news ends -->
             </div>
-
             <div class="item">
               <div class="col-md-12">
                 <img class="news-item" src="https://pbs.twimg.com/media/Cb2LwzZUUAAj0hG.jpg" alt="WSDM">
@@ -459,8 +454,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- Controls -->
             <a class="left carousel-control" href="#carousel-news" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
               class="sr-only">Back</span>
@@ -473,6 +466,7 @@
       </div>
     </div>
   </section>
+-->
 
   <!-- Gallery Section -->
   <section id="gallery" class="faculty-section fix-height">
