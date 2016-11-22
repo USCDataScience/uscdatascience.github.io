@@ -207,7 +207,7 @@
     "nithin":{
       "name": "Nithin Krishna",
       "email": "ottiling@usc.edu",
-      "photo": "http://en.gravatar.com/userimage/59637524/20190eaf998a97bf86e23e9e0102ed21.jpg?size=500",
+      "photo": "http://en.gravatar.com/userimage/59637524/b92e6be534b4d7cc8e03300e7dfbcf88.jpg?size=500",
       "url": "https://www.linkedin.com/in/nithinkrishh"
     }
   },
@@ -262,10 +262,11 @@
     }
   ],
   "ras": [
-    {"id": "tg", "terms": ["Spring 2016"]},
-    {"id": "karan", "terms": ["Spring 2016"]},
+    {"id": "tg", "terms": ["Fall 2016"]},
+    {"id": "karan", "terms": ["Fall 2016"]},
+    {"id": "madhav", "terms": ["Fall 2016"]},
+    {"id": "nithin", "terms": ["Fall 2016"]},
     {"id":"harsha", "terms": ["Spring 2016"]},
-    {"id": "madhav", "terms": ["Spring 2016"]},
     {"id": "sujen", "terms": ["Spring 2016"]},
     {"id":"trevor", "terms": ["Spring 2016"]}
   ]
