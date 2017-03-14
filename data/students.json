@@ -209,6 +209,36 @@
       "email": "ottiling@usc.edu",
       "photo": "http://en.gravatar.com/userimage/59637524/b92e6be534b4d7cc8e03300e7dfbcf88.jpg?size=500",
       "url": "https://www.linkedin.com/in/nithinkrishh"
+    },
+    "brewin":{
+      "name": "Maxwell Brewin",
+      "email": "brewin@usc.edu",
+      "photo": null,
+      "url": "https://github.com/mpbrewin"
+    },
+    "yanj":{
+      "name": "Jeffrey Yan",
+      "email": "yanj@usc.edu",
+      "photo": null,
+      "url": "https://www.linkedin.com/in/jeffrey-yan-56609a87"
+    },
+    "jesquibe":{
+      "name": "Jonathan Esquibel",
+      "email": "jesquibe@usc.edu",
+      "photo": null,
+      "url": null
+    },
+    "bacarrol":{
+      "name": "Blake Carrol",
+      "email": "bacarrol@usc.edu",
+      "photo": null,
+      "url": null
+    },
+    "jacquefc":{
+      "name": "Jacqueline Chao",
+      "email": "jacquefc@usc.edu",
+      "photo": null,
+      "url": null
     }
   },
   "dr-students": [
@@ -251,6 +281,10 @@
 	  {
       "title": "Post Doctoral Scholars",
       "students": [ "jane", "jihyun", "annie"]
+    },
+    {
+    	"title" : "Undergraduate Students - 2017",
+    	"students" : ["brewin", "yanj", "jesquibe", "bacarrol", "jacquefc"]
     },
     {
       "title": "Undergraduate Students - 2016",
