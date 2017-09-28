@@ -239,11 +239,24 @@
       "email": "jacquefc@usc.edu",
       "photo": null,
       "url": null
+    },
+    "srinidhi":{
+      "name": "Srinidhi Nandakumar",
+      "email": "snandaku@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAx2AAAAJDY1NWUyN2E0LWZhMWUtNGE4OS1hMzRmLWUxYzg2N2YxNmY4MQ.jpg",
+      "url": "www.linkedin.com/in/srinidhinandakumar"
     }
   },
   "dr-students": [
     {
       "current" : true,
+      "title" : "Fall 2017",
+      "students" : [
+        "srinidhi"
+       ]
+    },  
+    {
+      "current" : false,
       "title" : "Summer 2016",
       "students" : [
         "anastasija",
