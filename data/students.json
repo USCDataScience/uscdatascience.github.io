@@ -234,6 +234,12 @@
       "photo": null,
       "url": null
     },
+    "aman":{
+      "name": "Aman Mathur",
+      "email": "armathur@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdfAAAAJGJjNTBjYjYxLTczMGYtNGJkMy1hZjI1LTcwZTNhMjYxNTBhZg.jpg",
+      "url": "https://www.linkedin.com/in/aman-mathur-usc/"
+    },
     "jacquefc":{
       "name": "Jacqueline Chao",
       "email": "jacquefc@usc.edu",
@@ -242,8 +248,15 @@
     }
   },
   "dr-students": [
-    {
+   {
       "current" : true,
+      "title" : "Fall 2017",
+      "students" : [
+        "aman"
+       ]
+    },  
+    {
+      "current" : false,
       "title" : "Summer 2016",
       "students" : [
         "anastasija",
