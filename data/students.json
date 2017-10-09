@@ -257,6 +257,12 @@
       "email": "vorugant@usc.edu",
       "photo": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlvAAAAJDYyY2Q3ZjA1LWQxMDUtNGMxYS05MTA3LWJmMTFhODgxZDIzMw.jpg",
       "url": "https://www.linkedin.com/in/hrudaykumar/"
+    },
+    "ming":{
+      "name": "Ming-Chang (Eric) Chiu",
+      "email": "mingchac@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAApSAAAAJGU4YjdlM2YzLWJiYmEtNDkwMC1hZDNkLTcxNjZkYzdlY2U4YQ.jpg",
+      "url": "https://www.linkedin.com/in/eric-chiu/"
     }
   },
   "dr-students": [
@@ -264,6 +270,7 @@
       "current" : true,
       "title" : "Fall 2017",
       "students" : [
+        "ming",
         "srinidhi",
         "Hruday",
         "aman"
