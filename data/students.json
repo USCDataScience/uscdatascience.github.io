@@ -42,6 +42,18 @@
       "photo": "images/headshots/sujen-shah.jpg",
       "url": "https://www.linkedin.com/in/sujenshah"
     },
+    "simin": {
+      "name": "Simin Karvigh",
+      "email": "ahmadika@usc.edu",
+      "photo": "images/headshots/simin.jpg",
+      "url": "https://www.linkedin.com/in/siminkarvigh/"
+    },  
+    "omid": {
+      "name": "Omid Davtalab",
+      "email": "davtalab@usc.edu",
+      "photo": "images/headshots/omid.jpg",
+      "url": "https://www.linkedin.com/in/omiddavtalab"
+    }, 
     "manali": {
       "name": "Manali Shah",
       "email": "manalids@usc.edu",
@@ -336,6 +348,8 @@
     {"id": "nithin", "terms": ["Fall 2016"]},
     {"id":"harsha", "terms": ["Spring 2016"]},
     {"id": "sujen", "terms": ["Spring 2016"]},
-    {"id":"trevor", "terms": ["Spring 2016"]}
+    {"id":"trevor", "terms": ["Spring 2016"]},
+    {"id": "simin", "terms": ["Fall 2017"]},
+    {"id": "omid", "terms": ["Fall 2017"]},
   ]
 }
