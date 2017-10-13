@@ -42,6 +42,18 @@
       "photo": "images/headshots/sujen-shah.jpg",
       "url": "https://www.linkedin.com/in/sujenshah"
     },
+    "simin": {
+      "name": "Simin Karvigh",
+      "email": "ahmadika@usc.edu",
+      "photo": "images/headshots/simin.jpg",
+      "url": "https://www.linkedin.com/in/siminkarvigh/"
+    },  
+    "omid": {
+      "name": "Omid Davtalab",
+      "email": "davtalab@usc.edu",
+      "photo": "images/headshots/omid.jpg",
+      "url": "https://www.linkedin.com/in/omiddavtalab"
+    }, 
     "manali": {
       "name": "Manali Shah",
       "email": "manalids@usc.edu",
@@ -234,16 +246,50 @@
       "photo": null,
       "url": null
     },
+    "aman":{
+      "name": "Aman Mathur",
+      "email": "armathur@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdfAAAAJGJjNTBjYjYxLTczMGYtNGJkMy1hZjI1LTcwZTNhMjYxNTBhZg.jpg",
+      "url": "https://www.linkedin.com/in/aman-mathur-usc/"
+    },
     "jacquefc":{
       "name": "Jacqueline Chao",
       "email": "jacquefc@usc.edu",
       "photo": null,
       "url": null
+    },
+    "srinidhi":{
+      "name": "Srinidhi Nandakumar",
+      "email": "snandaku@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAx2AAAAJDY1NWUyN2E0LWZhMWUtNGE4OS1hMzRmLWUxYzg2N2YxNmY4MQ.jpg",
+      "url": "www.linkedin.com/in/srinidhinandakumar"
+    },
+    "Hruday":{
+      "name": "Hruday Kumar Voruganti",
+      "email": "vorugant@usc.edu",
+      "photo": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlvAAAAJDYyY2Q3ZjA1LWQxMDUtNGMxYS05MTA3LWJmMTFhODgxZDIzMw.jpg",
+      "url": "https://www.linkedin.com/in/hrudaykumar/"
+    },
+    "ming":{
+      "name": "Ming-Chang (Eric) Chiu",
+      "email": "mingchac@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAApSAAAAJGU4YjdlM2YzLWJiYmEtNDkwMC1hZDNkLTcxNjZkYzdlY2U4YQ.jpg",
+      "url": "https://www.linkedin.com/in/eric-chiu/"
     }
   },
   "dr-students": [
-    {
+   {
       "current" : true,
+      "title" : "Fall 2017",
+      "students" : [
+        "ming",
+        "srinidhi",
+        "Hruday",
+        "aman"
+       ]
+    },  
+    {
+      "current" : false,
       "title" : "Summer 2016",
       "students" : [
         "anastasija",
@@ -302,6 +348,8 @@
     {"id": "nithin", "terms": ["Fall 2016"]},
     {"id":"harsha", "terms": ["Spring 2016"]},
     {"id": "sujen", "terms": ["Spring 2016"]},
-    {"id":"trevor", "terms": ["Spring 2016"]}
+    {"id":"trevor", "terms": ["Spring 2016"]},
+    {"id": "simin", "terms": ["Fall 2017"]},
+    {"id": "omid", "terms": ["Fall 2017"]},
   ]
 }
