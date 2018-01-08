@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The IRDS mission is to research and develop new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into information. We contribute to the world’s largest and most often downloaded open source software projects, we apply tried and true techniques including content detection and analysis, crawling, deduplication, similarity, named entity recognition, construction of inverted indices, query analysis, search, relevancy and ranking, interactive query analysis, and management of large data sets. We have expertise in data collection, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, Planetary Science, Astronomy, defense, and private industry.">
+    <meta name="keywords" content="IRDS, Data Science, Information Retrieval, Information Retrieval and Data Science, USC, Research, University of Southern California">
+    <meta name="robots" content="index, follow">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77850818-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <title>USC IRDS - CS599 - Content Detection and Analysis for Big Data - Spring 2018</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .student {
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><b>I.R.D.S.</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden">
+                          <a class="page-scroll" href="#page-top"></a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#about">ABOUT</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#faculty">FACULTY</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#students">STUDENTS</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#projects">PROJECTS</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#news">NEWS</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#gallery">GALLERY</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#contact">CONTACT</a>
+                      </li>
+                  </ul>
+                  <a href="http://usc.edu" class="usc-logo pull-right"><img src="./images/usc-shield-name-white.svg" width="176px" height="38px"></a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+          </ol>
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">WHAT IS <font class="usc-color">I.R.D.S.</font>?</h2>
+                    <hr>
+                    <p class="text-justify section-content">The Information Retrieval and Data Science Group’s (I.R.D.S.) mission is to research and develop new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into information. We contribute to the world’s largest and most often downloaded open source software projects, we apply tried and true techniques including content detection and analysis, crawling, deduplication, similarity, named entity recognition, construction of inverted indices, query analysis, search, relevancy and ranking, interactive query analysis, and management of large data sets. We have expertise in data collection, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, Planetary Science, Astronomy, defense, and private industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="faculty-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading"><font class="usc-color">USC</font> FACULTY</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+                            <img src="images/headshots/chris-mattmann.jpg" alt=""><br/>
+                            <label>Dr. Chris Mattmann</label><br/>
+                            <a href="http://sunset.usc.edu/~mattmann">sunset.usc.edu/~mattmann</a>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-justify section-content">
+                            He is a Principal Data Scientist and the Chief Architect in the Instrument and Data Systems section, at the Jet Propulsion Laboratory (JPL) in Pasadena, California and an Adjunct Associate Professor in the Computer Science Department within USC's Viterbi School of Engineering.<br/>
+                            At JPL, he developed the third generation of the Apache Object Oriented Data Technology (OODT) data processing and information integration system. OODT is an open source, data-grid middleware used across many scientific domains, such as planetary science, cancer research (go figure), and computer modeling, simulation and visualization. For more detail on OODT you can check out his ICSE 2006 paper that appeared in the Software Engineering Challenges and Achievements track and his 2009 IEEE Space Mission Challenges for Information Technology (SMC-IT) paper describing the refactorization and re-architecting of the data processing framework.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row center-block" style="float:none">
+      <div class="col-md-5">
+        <div>
+          <a class="twitter-timeline" href="https://twitter.com/USCDataScience"></a>
+           <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+           </script>
+        </div>
+        <div>
+          <div id="facebook-page" class="about-section fix-height">
+              <div class="fb-page" data-href="https://www.facebook.com/USCDataScience/"
+                    data-tabs="timeline" data-width="500px"
+                     data-height="1024px" data-small-header="true"
+                     data-adapt-container-width="false" data-hide-cover="false"
+                     data-show-facepile="false"><blockquote cite="https://www.facebook.com/USCDataScience/"
+                     class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/USCDataScience/">USC Information Retrieval and Data Science</a></blockquote>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div>
+          <div id="students" class="students-section">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="section-heading">STUDENTS</h2>
+                    <hr/>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Research Assistants</h3>
+                        </div>
+                        <div class="panel-body" id="ras-grid">
+                        </div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <h3>Directed Research (D.R.) Students</h3>
+                        <div class="dr-students" id="dr-students"></div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+  <!-- Projects Section -->
+
+  <section id="projects" class="faculty-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">PROJECTS</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel-project" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- Template for one project start -->
+              <div class="col-md-6 project-item">
+                <img src="https://c2.staticflickr.com/2/1668/25400858655_5fbb4060d8_c.jpg"
+                  alt="GeoParser" class="image-fit">
+                <div class="carousel-caption">
+                  <h3>GeoParser - Tika based Geospatial extractor</h3>
+                  <h3>
+                    <a href="https://github.com/MBoustani/GeoParser" target="_blank">https://github.com/MBoustani/GeoParser</a>
+                  </h3>
+                </div>
+              </div>
+              <!-- Template for one project ends -->
+              <div class="col-md-6 project-item">
+                <img src="https://c2.staticflickr.com/2/1608/25310171351_da0b0498af_c.jpg"
+                  alt="Khooshe" class="image-fit">
+                <div class="carousel-caption">
+                  <h3>Khooshe - Visualizing Big Data
+                    <a href="http://smadha.github.io/khooshe_openlayers.html" target="_blank">(DEMO)</a> </h3>
+                    <a href="https://github.com/MBoustani/Khooshe" target="_blank">https://github.com/MBoustani/Khooshe</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-6 project-item">
+                <img src="https://c2.staticflickr.com/2/1521/25377425506_6ae19fb5be.jpg"
+                  alt="NaMoStats" class="image-fit">
+                <div class="carousel-caption">
+                  <h3 class="font-black">IRDS analyzed elections. #HackTech2016</h3>
+                  <h3>
+                    <a
+                      href="http://devpost.com/software/namostats-analyzing-2016-us-presidential-elections-glv6df"
+                      target="_blank">NaMoStats Devpost Blog</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-6 project-item">
+                  <h3>Lucene Geo-Gazetteer</h3> <br/>
+                  <div>
+                    <p class="text-justify">
+                      A command line gazetteer built around the Geonames.org dataset, that uses
+                      the Apache Lucene library to create a searchable gazetter.
+                    </p>
+                    <p class="text-justify">The Geonames.org dataset contains over 10,000,000 geographical names
+                      corresponding to over 7,500,000 unique features. Beyond names of places in
+                      various languages, data stored include latitude, longitude, elevation,
+                      population, administrative subdivision and postal codes. All coordinates use the
+                      World Geodetic System 1984 (WGS84).</p>
+                  </div>
+
+                  <div class="carousel-caption">
+                    <h3>
+                      <a href="https://github.com/chrismattmann/lucene-geo-gazetteer"
+                        target="_blank">https://github.com/chrismattmann/lucene-geo-gazetteer</a>
+                    </h3>
+                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-6 project-item">
+                <img src="images/screenshots/clustering1.png"
+                  alt="Autoextractor" class="image-fit">
+                <div class="carousel-caption">
+                  <h3 class="font-black">Auto-Extractor - Clustering web pages</h3>
+                  <h3>
+                    <a href="https://github.com/USCDataScience/autoextractor"
+                      target="_blank">https://github.com/USCDataScience/autoextractor</a>
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-6 project-item">
+                <h3>DRAT - Distributed Release Audit Tool</h3> <br/>
+                <div>
+                  <p class="text-justify">
+                    A distributed, parallelized (Map Reduce) wrapper around Apache™ RAT (Release Audit Tool). RAT is used to check for proper licensing in software projects. However, RAT takes a prohibitively long time to analyze large repositories of code, since it can only run on one JVM. Furthermore, RAT isn't customizable by file type or file size and provides no incremental output. This wrapper dramatically speeds up the process by leveraging Apache™ OODT to parallelize the workflow.
+                  </p>
+                </div>
+                  <div class="carousel-caption">
+                    <h3>
+                      <a href="https://github.com/chrismattmann/drat"
+                        target="_blank">https://github.com/chrismattmann/drat</a>
+                    </h3>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-project" role="button"
+              data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+              aria-hidden="true"></span> <span class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-project" role="button"
+              data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
+              aria-hidden="true"></span> <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="about-section fix-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">NEWS</h2>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="carousel-news" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                      <img class="news-item" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg"
+                        alt="TACC Summer Supercomputing Institute (SSI)">
+                      <img class="news-item" src="https://facultyjobs.utexas.edu/img/phase2/RGB_university_primary.png" style="width:480px; height:230px"
+                        alt="The University of Texas, Austin">
+                  </div>
+
+                  <h3>TACC Summer Supercomputing Institute (SSI)</h3> <br/>
+                  <p class="text-justify news-item">
+                    TACC's SSI is a week-long workshop which introduces researchers, faculty, staff, students, and industrial partners to high performance computing, data analytics, and scientific visualization. TACC's technology experts will teach attendees how to effectively use advanced computing resources and technologies like Stampede, Maverick, and Wrangler.
+                  </p>
+                  <div class="filler-height">
+                  </div>
+                  <div class="carousel-caption">
+                    <h3 class="font-black">Karanjeet Singh, an IRDS student, got accepted into TACC SSI</h3>
+                    <h3>
+                      <a href="https://portal.tacc.utexas.edu/training/summer-institute" target="_blank">TACC Summer Supercomputing Institute</a>
+                    </h3>
+                  </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-md-12">
+                <img class="news-item" src="http://news.usc.edu/files/2016/05/DG_Mattmann_web-412x618.gif"
+                  alt="Apache Tika and Panama Papers">
+                <div class="carousel-caption">
+                  <h3 class="font-white">USC/JPL scientist made big data stories possible on The Panama Papers</h3>
+                  <h3>
+                    <a href="http://news.usc.edu/99878/uscjpl-scientist-made-big-data-stories-possible-on-the-panama-papers" target="_blank">Apache Tika used to extract data from the Panama Papers</a>
+                  </h3>
+                </div>
+              </div>
+	         </div>
+          <div class="item">
+              <div class="col-md-12">
+                <br/><br/><br/><br/><br/><br/>
+                <img class="news-item"
+                  src="http://events.linuxfoundation.org/sites/events/files/lfe_aconna_logodsv2.png"
+                  alt="DRAT ApacheCon NA">
+                <div class="row filler-height"></div>
+                <div class="carousel-caption">
+                  <h3 class="font-black">DRAT got selected for ApacheCon North America 2016</h3>
+                  <h3>
+                    <a href="http://sched.co/6OJS" target="_blank">DRAT - Distributed Release Audit Tool</a>
+                  </h3>
+                </div>
+              </div>
+          </div>
+
+          <div class="item">
+              <div class="col-md-12">
+                <br/><br/><br/><br/><br/><br/>
+                <img class="news-item"
+                  src="http://events.linuxfoundation.org/sites/events/files/lfe_aconna_logodsv2.png"
+                  alt="Clustering ApacheCon NA">
+                <div class="row filler-height"></div>
+                <div class="carousel-caption">
+                  <h3 class="font-black">Auto-Extractor is selected for a demo at ApacheCon North America 2016</h3>
+                  <h3>
+                    <a href="http://apachecon2016.sched.org/event/5d1434a6367ea36108745b16518d465c" target="_blank">Clustering the Nutch crawler output using Apache Spark</a>
+                  </h3>
+                </div>
+              </div>
+          </div>
+            <div class="item">
+              <div class="col-md-12">
+                <br/><br/><br/><br/><br/><br/>
+                <img class="news-item"
+                  src="https://2016.foss4g-na.org/sites/all/themes/eclipsecon_base/themes/foss4g2016/logo.png"
+                  alt="GeoParser">
+                <div class="row filler-height"></div>
+                <div class="carousel-caption">
+                  <h3 class="font-black">GeoParser got selected for Foss4g North America</h3>
+                  <h3>
+                    <a href="https://2016.foss4g-na.org/session/memex-geoparser" target="_blank">Memex
+                      - GeoParser</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img class="news-item" src="https://pbs.twimg.com/media/Cb2LwzZUUAAj0hG.jpg" alt="WSDM">
+                <div class="carousel-caption">
+                  <h3 font-black>Professor Chris Mattmann presenting multimedia metadata based
+                    forensics at ‪#‎WSDM2016‬ conference...</h3>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-news" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
+              class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-news" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
+              class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="faculty-section fix-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">GALLERY</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-gallery" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-gallery" data-slide-to="1"></li>
+            <li data-target="#carousel-gallery" data-slide-to="2"></li>
+            <li data-target="#carousel-gallery" data-slide-to="3"></li>
+            <li data-target="#carousel-gallery" data-slide-to="4"></li>
+            <li data-target="#carousel-gallery" data-slide-to="5"></li>
+            <li data-target="#carousel-gallery" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <!-- Template for one gallery start -->
+              <div class="col-md-12">
+                <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13239952_10208322987926877_7167090407058747132_n.jpg?oh=725b2b50671de777a0ae6d76c7bc9c9a&oe=57A1CF61" alt="IRDS Commencement2016">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at #Commencement2016</h3>
+                </div>
+              </div>
+              <!-- Template for one gallery ends -->
+            </div>
+
+            <div class="item">
+              <!-- Template for one gallery start -->
+              <div class="col-md-12">
+                <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/13217271_10208322987886876_148632828738098583_o.jpg" alt="IRDS Commencement2016">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at #Commencement2016</h3>
+                </div>
+              </div>
+              <!-- Template for one gallery ends -->
+            </div>
+
+            <div class="item">
+              <!-- Template for one gallery start -->
+              <div class="col-md-12">
+                <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13151659_10208264007172395_8713605767325409713_n.jpg?oh=3ca6b62f159061bfcffe367cedfef90c&oe=57E36D48" alt="IRDS JPL Tour">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at ‪#NASAJPL</h3>
+                </div>
+              </div>
+              <!-- Template for one gallery ends -->
+            </div>
+
+            <div class="item">
+              <div class="col-md-12">
+                <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13139158_10208264025772860_9057963856754943360_n.jpg?oh=bd2b664243c83c634f057246aba698ef&oe=57A90487" alt="IRDS JPL Tour">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at ‪#NASAJPL</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-md-12">
+                <img src="https://c2.staticflickr.com/2/1552/25312332451_4edaa5a9b0_c.jpg" alt="Hacktech">
+                <div class="carousel-caption">
+                  <h3 font-black>IRDS at ‪#HackTech2016</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="col-md-12">
+                <img
+                  src="https://c2.staticflickr.com/2/1559/25038051409_c4e1063885_c.jpg"
+                  alt="Bday celeb">
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-12">
+                <img
+                  src="https://c2.staticflickr.com/2/1706/25378849196_babc8326b2_z.jpg"
+                  alt="JPL meet">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span
+              class="sr-only">Back</span>
+            </a> <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span
+              class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Acknowledgement section -->
+  <section id="acknowledgement" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-heading">Acknowledgments</h3>
+          These works are supported by the DARPA <a href="http://www.darpa.mil/program/xdata" target="_blank">XDATA</a>/<a href="http://memex.jpl.nasa.gov/" target="_blank">Memex</a> program. In addition, the NSF Polar Cyberinfrastructure award numbers <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1348450">PLR-1348450</a> and <a href="http://nsf.gov/awardsearch/showAward?AWD_ID=1445624">PLR-1445624</a> funded a portion of the work. Effort supported in part by JPL, managed by the California Institute of Technology on behalf of NASA.
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+	      <br/>
+              <div class="col-md-4">
+                    <h3 class="section-heading">Contact Us</h3>
+                    <h4 class="section-heading">
+                        <a href="mailto:mattmann@usc.edu">mattmann@usc.edu</a> or <a href="mailto:irds-L@mymaillists.usc.edu">irds-L@mymaillists.usc.edu</a>
+                    </h4>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="section-heading">Web Archives - IRDS Mailing List</h3>
+		            <p>We maintain a web archives <a href="https://mymaillists.usc.edu/sympa/arc/irds-l">here</a> of our mailing list conversations for
+                       transparency and openness. </p>
+                </div>
+                <div class="col-md-4">
+                  <h3 class="section-heading">Useful Links</h3>
+                    <ul>
+                      <li><a href="https://github.com/USCDataScience"> Github repositories</a></li>
+                      <li><a href="files/USC-IRDS-PPT-Template.potx"> Power point presentation template</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+<script>
+    function makeStudent(id, student, terms){
+        //console.log(student)
+        var res = $("<div>", {"id": id, "class": "col-md-4"});
+        var element = $("<div>", {"class": "student"})
+                .append($("<a>", {"href": student.url, "target": "blank"})
+                        .append($("<img>", {"alt": student.name, "src": student.photo != null ? student.photo: "images/headshots/avatar-placeholder.svg"}))
+                        .append("<br/>")
+                        .append($("<label>", {"text": student.name}))
+                );
+        if (student.email != null && student.email != ""){
+            element.append("<br/>")
+                    .append($("<a>", {"href": "mailto:"+student.email, "text": student.email}))
+        }
+        if (terms){
+            element.append("<br/>");
+            element.append(terms.join(", "));
+        }
+        res.append(element)
+        return res;
+    }
+
+    function makeStudentsSection(sect, data){
+        var section = $("<div>", {'class': 'panel panel-default'});
+        var sectid = sect.title.replace(/\s+/g, '-').toLowerCase();
+        $("<div>", {"id": sectid, 'class': 'panel-heading'})
+                .append($("<h3>", {'class': 'panel-title', text: sect.title}))
+                .appendTo(section);
+        var row;
+        for (var i = 0; i < sect.students.length; i++) {
+            if (i % 3 == 0){
+                row = $("<div>", {"class": "row"}).appendTo(section);
+            }
+            makeStudent(sectid+sect.students[i], data.profiles[sect.students[i]]).appendTo(row)
+        }
+        return section
+    }
+
+  url = "data/students.json";
+  $.getJSON(url, function(data){
+      //console.log(data);
+      var profiles = data['profiles'];
+      var drStEle = $("#dr-students");
+      var drs = data['dr-students'];
+      for (var i = 0; i < drs.length; i++){
+          var sem = drs[i]
+          var sectionEl = makeStudentsSection(sem, data)
+          drStEle.append(sectionEl)
+      }
+      var rasEl = $("#ras-grid");
+      var ras = data['ras'];
+      var row;
+      for (var j = 0; j < ras.length; j++){
+          if (j % 3 == 0){
+              row = $("<div>", {"class": "row"}).appendTo(rasEl);
+          }
+          makeStudent("ra-"+ras[j].id, data.profiles[ras[j].id], ras[j].terms)
+                  .appendTo(row)
+      }
+  })
+ </script>
+
+</body>
+
+</html>
