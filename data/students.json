@@ -282,6 +282,30 @@
       "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzaAAAAJDBlMDliMjFkLWRiZTYtNGU2Mi1iOGEwLWZmZjBiNDhjMDViZg.jpg",
       "url": "https://www.linkedin.com/in/cs/varunmittal"
    }
+   "yifei":{
+      "name": "Yifei Liu",
+      "email": "yifeil@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAqnAAAAJDk0MDQ0YTRkLWJhNjMtNDZmYS1hODlkLTNhYTFlOTIzM2I2Mg.jpg",
+      "url": "https://www.linkedin.com/in/yifei-xavier-liu-82aa2310b/"
+    },
+   "peifei":{
+      "name": "Peifei Li",
+      "email": "peifeili@usc.edu",
+      "photo": "https://media.licdn.com/media/AAMABADGAAwAAQAAAAAAAA5-AAAAJGI2Mjc5MThlLTAwNTMtNDZlMC05NDAzLTEzNDdiOGU5NTFmOA.jpg",
+      "url": "https://www.linkedin.com/in/peifei-li-29a498123/detail/photo/"
+    },
+   "chenming":{
+      "name": "Ming Chen",
+      "email": "chenming@usc.edu",
+      "photo": "https://media.licdn.com/media/AAEAAQAAAAAAAAgbAAAAJDFhZTU3MWQ2LTRhOWEtNDk5ZS1iZTcxLWE5Y2I1N2RiNDNlYQ.jpg",
+      "url": "https://www.linkedin.com/in/alexis-ming-chen-984337100/"
+    },
+    "haowen":{
+      "name": "Haowen Lin",
+      "email": "haowenli@usc.edu",
+      "photo": "https://media.licdn.com/media/AAEAAQAAAAAAAAl8AAAAJGMxOTdhNGQ2LTNmNzgtNGQxYy1iMDgzLWM5MTI3MjQ3OGM4Zg.jpg",
+      "url": "https://www.linkedin.com/in/haowen-lin/"
+    }
   },
   "dr-students": [
    {
