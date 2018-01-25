@@ -360,6 +360,10 @@
       "students": [ "jane", "jihyun", "annie"]
     },
     {
+        "title" : "Undergraduate Students - 2018",
+        "students" : ["yifei", "peifei", "chenming", "haowen"]
+    },
+    {
     	"title" : "Undergraduate Students - 2017",
     	"students" : ["brewin", "yanj", "jesquibe", "bacarrol", "jacquefc"]
     },
