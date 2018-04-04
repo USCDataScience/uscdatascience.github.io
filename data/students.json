@@ -7,10 +7,10 @@
       "url": "http://www-scf.usc.edu/~msharan/"
     },
     "tg": {
-      "name": "Thamme Gowda N.",
-      "email": "thammegowda.n@usc.edu",
+      "name": "Thamme Gowda.",
+      "email": "tg@isi.edu",
       "photo": "https://s.gravatar.com/avatar/50d272e874e077d4f5ec3538241b260f?s=512",
-      "url": "http://scf.usc.edu/~tnarayan/"
+      "url": "https://isi.edu/~tg/"
     },
     "harsha": {
       "name": "Harshavardhan Manjunatha",
@@ -42,6 +42,18 @@
       "photo": "images/headshots/sujen-shah.jpg",
       "url": "https://www.linkedin.com/in/sujenshah"
     },
+    "simin": {
+      "name": "Simin Karvigh",
+      "email": "ahmadika@usc.edu",
+      "photo": "images/headshots/simin.jpg",
+      "url": "https://www.linkedin.com/in/siminkarvigh/"
+    },  
+    "omid": {
+      "name": "Omid Davtalab",
+      "email": "davtalab@usc.edu",
+      "photo": "images/headshots/omid.jpg",
+      "url": "https://www.linkedin.com/in/davtalab/"
+    }, 
     "manali": {
       "name": "Manali Shah",
       "email": "manalids@usc.edu",
@@ -234,6 +246,12 @@
       "photo": null,
       "url": null
     },
+    "aman":{
+      "name": "Aman Mathur",
+      "email": "armathur@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAdfAAAAJGJjNTBjYjYxLTczMGYtNGJkMy1hZjI1LTcwZTNhMjYxNTBhZg.jpg",
+      "url": "https://www.linkedin.com/in/aman-mathur-usc/"
+    },
     "jacquefc":{
       "name": "Jacqueline Chao",
       "email": "jacquefc@usc.edu",
@@ -243,16 +261,62 @@
     "srinidhi":{
       "name": "Srinidhi Nandakumar",
       "email": "snandaku@usc.edu",
-      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAx2AAAAJDY1NWUyN2E0LWZhMWUtNGE4OS1hMzRmLWUxYzg2N2YxNmY4MQ.jpg",
-      "url": "www.linkedin.com/in/srinidhinandakumar"
+      "photo": "images/headshots/srinidhi.png",
+      "url": "https://www.linkedin.com/in/srinidhinandakumar"
+    },
+    "Hruday":{
+      "name": "Hruday Kumar Voruganti",
+      "email": "vorugant@usc.edu",
+      "photo": "https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlvAAAAJDYyY2Q3ZjA1LWQxMDUtNGMxYS05MTA3LWJmMTFhODgxZDIzMw.jpg",
+      "url": "https://www.linkedin.com/in/hrudaykumar/"
+    },
+    "ming":{
+      "name": "Ming-Chang (Eric) Chiu",
+      "email": "mingchac@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAApSAAAAJGU4YjdlM2YzLWJiYmEtNDkwMC1hZDNkLTcxNjZkYzdlY2U4YQ.jpg",
+      "url": "https://www.linkedin.com/in/eric-chiu/"
+    },
+   "varun":{
+      "name": "Varun Mittal",
+      "email": "varunm@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAzaAAAAJDBlMDliMjFkLWRiZTYtNGU2Mi1iOGEwLWZmZjBiNDhjMDViZg.jpg",
+      "url": "https://www.linkedin.com/in/cs/varunmittal"
+   },
+   "yifei":{
+      "name": "Yifei Liu",
+      "email": "yifeil@usc.edu",
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAqnAAAAJDk0MDQ0YTRkLWJhNjMtNDZmYS1hODlkLTNhYTFlOTIzM2I2Mg.jpg",
+      "url": "https://www.linkedin.com/in/yifei-xavier-liu-82aa2310b/"
+    },
+   "peifei":{
+      "name": "Peifei Li",
+      "email": "peifeili@usc.edu",
+      "photo": "https://media-exp2.licdn.com/media/AAMABADGAAwAAQAAAAAAAA_eAAAAJDI4YTNiMWE0LWMyYzktNDhkNi1iOTAzLTczNDYxN2JlNjMwOQ.jpg",
+      "url": "https://www.linkedin.com/in/peifei-li-29a498123/detail/photo/"
+    },
+   "chenming":{
+      "name": "Ming Chen",
+      "email": "chenming@usc.edu",
+      "photo": "https://media.licdn.com/media/AAEAAQAAAAAAAAgbAAAAJDFhZTU3MWQ2LTRhOWEtNDk5ZS1iZTcxLWE5Y2I1N2RiNDNlYQ.jpg",
+      "url": "https://www.linkedin.com/in/alexis-ming-chen-984337100/"
+    },
+    "haowen":{
+      "name": "Haowen Lin",
+      "email": "haowenli@usc.edu",
+      "photo": "https://media.licdn.com/media/AAEAAQAAAAAAAAl8AAAAJGMxOTdhNGQ2LTNmNzgtNGQxYy1iMDgzLWM5MTI3MjQ3OGM4Zg.jpg",
+      "url": "https://www.linkedin.com/in/haowen-lin/"
     }
   },
   "dr-students": [
-    {
-      "current" : true,
+   {
+      "current" : false,
       "title" : "Fall 2017",
       "students" : [
-        "srinidhi"
+        "ming",
+        "srinidhi",
+        "Hruday",
+        "aman",
+	"varun"
        ]
     },  
     {
@@ -296,6 +360,10 @@
       "students": [ "jane", "jihyun", "annie"]
     },
     {
+        "title" : "Undergraduate Students - 2018",
+        "students" : ["yifei", "peifei", "chenming", "haowen"]
+    },
+    {
     	"title" : "Undergraduate Students - 2017",
     	"students" : ["brewin", "yanj", "jesquibe", "bacarrol", "jacquefc"]
     },
@@ -315,6 +383,9 @@
     {"id": "nithin", "terms": ["Fall 2016"]},
     {"id":"harsha", "terms": ["Spring 2016"]},
     {"id": "sujen", "terms": ["Spring 2016"]},
-    {"id":"trevor", "terms": ["Spring 2016"]}
+    {"id":"trevor", "terms": ["Spring 2016"]},
+    {"id": "simin", "terms": ["Fall 2017"]},
+    {"id": "omid", "terms": ["Fall 2017"]},
+    {"id": "srinidhi", "terms": ["Spring 2018"]}
   ]
 }
