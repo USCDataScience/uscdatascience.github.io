@@ -1,5 +1,11 @@
 {
   "profiles": {
+    "prerana": {
+      "name": "Prerana T H Math",
+      "email": "teligiha@usc.edu",
+      "photo": "images/headshots/prerana.jpg",
+      "url": "https://www.linkedin.com/in/preranathm/"
+    },	  	
     "madhav": {
       "name": "Madhav Sharan",
       "email": "msharan@usc.edu",
@@ -386,7 +392,8 @@
     {"id":"trevor", "terms": ["Spring 2016"]},
     {"id": "simin", "terms": ["Fall 2017"]},
     {"id": "omid", "terms": ["Fall 2017"]},
-    {"id": "srinidhi", "terms": ["Spring 2018"]}
+    {"id": "srinidhi", "terms": ["Spring 2018"]},
+    {"id": "prerana", "terms": ["Summer & Fall 2018"]}
   ]
 }
 
