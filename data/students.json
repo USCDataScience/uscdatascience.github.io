@@ -5,7 +5,13 @@
       "email": "teligiha@usc.edu",
       "photo": "images/headshots/prerana.jpg",
       "url": "https://www.linkedin.com/in/preranathm/"
-    },	  	
+    },	
+    "dixita": {
+      "name": "Dixita V. Patel",
+      "email": "dixitapa@usc.edu",
+      "photo": "images/headshots/dixita.jpg",
+      "url": "https://www.linkedin.com/in/dixitapatel42/"
+    },	  	  
     "madhav": {
       "name": "Madhav Sharan",
       "email": "msharan@usc.edu",
@@ -314,6 +320,13 @@
     }
   },
   "dr-students": [
+  {
+      "current" : true,
+      "title" : "Summer 2018",
+      "students" : [
+        "dixita"
+       ]
+    }, 
    {
       "current" : false,
       "title" : "Fall 2017",
