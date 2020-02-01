@@ -1,5 +1,11 @@
 {
   "profiles": {
+    "yash": {
+      "name": "Yash A Shah",
+      "email": "yashah@usc.edu",
+      "photo": "images/headshots/Yash_Shah_Headshot.jpg",
+      "url": "https://www.linkedin.com/in/yashashah"
+    },	
     "prerana": {
       "name": "Prerana T H Math",
       "email": "teligiha@usc.edu",
@@ -320,6 +326,13 @@
     }
   },
   "dr-students": [
+  {
+      "current" : true,
+      "title" : "Spring 2020",
+      "students" : [
+        "yash"
+       ]
+    }, 
   {
       "current" : true,
       "title" : "Summer 2018",
