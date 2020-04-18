@@ -332,6 +332,13 @@
     }
   },
   "dr-students": [
+ {
+      "current" : true,
+      "title" : "Summer 2020",
+      "students" : [
+        "Resherle"
+       ]
+    }, 
   {
       "current" : true,
       "title" : "Spring 2020",
