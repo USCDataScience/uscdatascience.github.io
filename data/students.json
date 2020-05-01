@@ -1,6 +1,6 @@
 {
   "profiles": {
-  	 "resherle": {
+    "resherle": {
       "name": "Resherle Verna",
       "email": "rverna@usc.edu",
       "photo": "images/headshots/resherle-verna.jpg",
@@ -336,7 +336,7 @@
       "current" : true,
       "title" : "Summer 2020",
       "students" : [
-        "Resherle"
+        "resherle"
        ]
     }, 
   {
