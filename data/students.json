@@ -1,5 +1,11 @@
 {
   "profiles": {
+    "resherle": {
+      "name": "Resherle Verna",
+      "email": "rverna@usc.edu",
+      "photo": "images/headshots/resherle-verna.jpg",
+      "url": "https://www.linkedin.com/in/resherle-verna-96945898"
+    },
     "yash": {
       "name": "Yash A Shah",
       "email": "yashah@usc.edu",
@@ -326,6 +332,13 @@
     }
   },
   "dr-students": [
+ {
+      "current" : true,
+      "title" : "Summer 2020",
+      "students" : [
+        "resherle"
+       ]
+    }, 
   {
       "current" : true,
       "title" : "Spring 2020",
@@ -422,4 +435,3 @@
     {"id": "prerana", "terms": ["Summer 2018", "Fall 2018"]}
   ]
 }
-
