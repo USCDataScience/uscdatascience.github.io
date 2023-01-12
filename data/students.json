@@ -12,6 +12,13 @@
       "photo": "images/headshots/Yash_Shah_Headshot.jpg",
       "url": "https://www.linkedin.com/in/yashashah"
     },	
+    "suchith":{
+      "name": "Suchith Prathapaneni",
+      "email": "sprathap@usc.edu",
+      "photo": "images/headshots/suchith_photo.png",
+      "url": "www.linkedin.com/in/suchith-prathapaneni"
+    },  
+	  
     "prerana": {
       "name": "Prerana T H Math",
       "email": "teligiha@usc.edu",
@@ -432,6 +439,9 @@
     {"id": "simin", "terms": ["Fall 2017"]},
     {"id": "omid", "terms": ["Fall 2017", "Summer 2018"]},
     {"id": "srinidhi", "terms": ["Spring 2017", "Summer 2018"]},
-    {"id": "prerana", "terms": ["Summer 2018", "Fall 2018"]}
+    {"id": "prerana", "terms": ["Summer 2018", "Fall 2018"]},
+    {"id": "suchith", "terms": ["Spring 2023"]}	  
+	  
+	  
   ]
 }
