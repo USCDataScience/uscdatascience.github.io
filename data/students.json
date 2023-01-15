@@ -339,22 +339,29 @@
     }
   },
   "dr-students": [
- {
-      "current" : true,
+   {
+     "current" : true,
+     "title" : "Spring 2023",
+     "students" : [
+        "suchith"
+     ]
+    },
+   {
+      "current" : false,
       "title" : "Summer 2020",
       "students" : [
         "resherle"
        ]
     }, 
   {
-      "current" : true,
+      "current" : false,
       "title" : "Spring 2020",
       "students" : [
         "yash"
        ]
     }, 
   {
-      "current" : true,
+      "current" : false,
       "title" : "Summer 2018",
       "students" : [
         "dixita"
