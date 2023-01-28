@@ -346,7 +346,7 @@
     "rohan":{
       "name": "Rohan Gupta",
       "email": "rgupta96@usc.edu",
-      "photo": null,
+      "photo": "images/headshots/rohangupta.jpg",
       "url": "https://www.linkedin.com/in/rohaninvest/"
     },
     "isaac":{
@@ -358,7 +358,7 @@
     "nic":{
       "name": "Nic Buxbaum",
       "email": "nbuxbaum@usc.edu",
-      "photo": null,
+      "photo": "images/headshots/nicbuxbaum.jpg",
       "url": "https://www.linkedin.com/in/nicholas-buxbaum/"
     },
     "max":{
