@@ -336,6 +336,36 @@
       "email": "haowenli@usc.edu",
       "photo": "images/headshots/haowen-lin.jpg",
       "url": "https://www.linkedin.com/in/haowen-lin/"
+    },
+    "karanmenon":{
+      "name": "Karan Menon",
+      "email": "krmenon@usc.edu",
+      "photo": "images/headshots/karanmenonheadshot.png",
+      "url": "https://www.linkedin.com/in/karan-r-menon/"
+    },
+    "rohan":{
+      "name": "Rohan Gupta",
+      "email": "rgupta96@usc.edu",
+      "photo": "images/headshots/rohangupta.jpg",
+      "url": "https://www.linkedin.com/in/rohaninvest/"
+    },
+    "isaac":{
+      "name": "Isaac Wahout",
+      "email": "wahout@usc.edu",
+      "photo": null,
+      "url": "https://www.linkedin.com/in/isaac-wahout-2824721b7/"
+    },
+    "nic":{
+      "name": "Nic Buxbaum",
+      "email": "nbuxbaum@usc.edu",
+      "photo": "images/headshots/nicbuxbaum.jpg",
+      "url": "https://www.linkedin.com/in/nicholas-buxbaum/"
+    },
+    "max":{
+      "name": "Max Albright",
+      "email": "mdalbrig@usc.edu",
+      "photo": "images/headshots/maxalbright.jpg",
+      "url": "https://www.linkedin.com/in/maxalbright/"
     }
   },
   "dr-students": [
