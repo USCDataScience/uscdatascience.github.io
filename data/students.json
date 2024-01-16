@@ -11,7 +11,15 @@
       "email": "yashah@usc.edu",
       "photo": "images/headshots/Yash_Shah_Headshot.jpg",
       "url": "https://www.linkedin.com/in/yashashah"
-    },	
+    },
+
+    "deepanshu": {
+      "name": "Deepanshu Jain",
+      "email": "jaind@usc.edu",
+      "photo": "images/headshots/deepanshu-jain.jpeg",
+      "url": "https://www.linkedin.com/in/deepanshu-jain-01/"
+    },
+	  
     "suchith":{
       "name": "Suchith Prathapaneni",
       "email": "sprathap@usc.edu",
@@ -481,7 +489,8 @@
     {"id": "omid", "terms": ["Fall 2017", "Summer 2018"]},
     {"id": "srinidhi", "terms": ["Spring 2017", "Summer 2018"]},
     {"id": "prerana", "terms": ["Summer 2018", "Fall 2018"]},
-    {"id": "suchith", "terms": ["Spring 2023"]}	  
+    {"id": "suchith", "terms": ["Spring 2023"]},
+    {"id": "deepanshu", "terms": ["Spring 2024"]}	  
 	  
 	  
   ]
