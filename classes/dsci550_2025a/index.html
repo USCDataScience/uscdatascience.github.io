@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The IRDS mission is to research and develop new methodology and open source software to analyze, ingest, process, and manage Big Data and to turn it into information. We contribute to the world’s largest and most often downloaded open source software projects, we apply tried and true techniques including content detection and analysis, crawling, deduplication, similarity, named entity recognition, construction of inverted indices, query analysis, search, relevancy and ranking, interactive query analysis, and management of large data sets. We have expertise in data collection, working with NASA, DARPA, DHS, NIH across a number of domains, Earth Science, Planetary Science, Astronomy, defense, and private industry.">
+    <meta name="keywords" content="IRDS, Data Science, Information Retrieval, Information Retrieval and Data Science, USC, Research, University of Southern California">
+    <meta name="robots" content="index, follow">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77850818-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <title>USC IRDS - DSCI 550: Data Science at Scale - Spring 2024</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- App CSS -->
+    <link href="../../css/app.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .student {
+            margin: 15px;
+        }
+    </style>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="http://irds.usc.edu/"><b>I.R.D.S.</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav">
+                      <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                      <li class="hidden">
+                          <a class="page-scroll" href="#page-top"></a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#intro">INTRO</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#description">DESCRIPTION</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#integrity">INTEGRITY</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#textbook">TEXTBOOK</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#assignments">ASSIGNMENTS</a>
+                      </li>
+                      <li>
+                          <a class="page-scroll" href="#schedule">SCHEDULE</a>
+                      </li>
+
+                  </ul>
+                  <a href="http://usc.edu" class="usc-logo pull-right"><img src="../../images/usc-shield-name-white.svg" width="176px" height="38px"></a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+     <h2 class="section-heading">DSCI 550: <font class="usc-color">Data Science at Scale</font></h2>
+
+     <div class="row">
+       <div class="col-md-16">
+         <h2>Class Info</h2>
+         Spring Semester, 2025<br/>
+         <label>Location</label>
+         : <a href-"https://maps.usc.edu/?id=1928#!ct/53722,53723,55414,55415,55418?s/gfs">GFS 207</a> <br/>
+         <label>Time</label>
+         : Th 4:00-7:20pm<br/>
+         <label>Class number</label>
+         : 32463R<br/>
+		 <label>Class number</label>
+	   :no DEN, only on campus       </div>
+     </div>
+     <div class="row"> 
+      <div class="col-md-4">
+            <h2>Instructor</h2>
+                            <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+                            <img src="../../images/headshots/chris-lensa-ai-jan2023.png" style=height:200px; alt=""><br>
+                            <label>Dr. Chris Mattmann</label><br>
+                            <a href="http://irds.usc.edu/faculty/mattmann/">http://irds.usc.edu/faculty/mattmann</a><br/>
+                            <label>E-Mail: </label>&nbsp;<a href="mailto:mattmann@usc.edu">mattmann@usc.edu</a><br/>
+                            <label>Office Hours:</label>
+       &nbsp;3:00pm-4:00pm <b><a href="https://maps.usc.edu/?id=1928#!ct/53722,53723,55414,55415,55418?s/gcs">GCS (TBD)</a></b>&nbsp;(right before class)       </div>  
+       <div class="col-md-4">
+        <h2>Course Producer</h2>        
+          <div class="student">
+            <a href="www.linkedin.com/in/deepanshu-jain-01/" target="blank">
+              <img alt="TBD" src="../../images/headshots/deepanshu-jain.jpeg"><br>
+                <label>Deepanshu Jain </label></a><br><strong>E-Mail:</strong>&nbsp;<a href="mailto:jaind@usc.edu">jaind@usc.edu</a><br>
+          </div>
+         
+       </div>
+  
+
+
+
+    </section>
+
+    <!-- Overview Section -->
+    <section id="description" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">DSCI 550 <font class="usc-color">Overview</font></h2>
+                    <hr>
+		    <p class="text-justify section-content">This course is designed as an overview course to give students a broad understanding of Informatics topics for Big Data and to get practical experience with key Big Data informatics techniques. Topics include roadmap of informatics, the data lifecycle, the role of the data scientist, and analyzing and exploring Big Data with real world use cases in data analytics, and big data. Understanding Big Data involves understanding of digital file formats, their detection and data extraction from them. Emphasis areas include Document Type Detection; Parsing and extraction; Metadata understanding and analysis; Language Identification and detection from files and finally file formats and representation. The class also has a specific focus on Content Detection and Analysis from large data sets.  Datasets used in the course are publicly collected by the instructor or his collaborators involved in national Big Data initiatives including DARPA, NASA and other projects. The course is designed to be accessible to students with experience programming in Python and Java at an intermediate level. The course will introduce the students to topical software frameworks that deal with Big Data including Tika, Solr, ElasticSearch™, TensorFlow, Nutch and Apache Hadoop™. The course will be a combination of lecture, in-class discussion, readings, group-based assignments and a final exam.</p>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-lg-12">
+            	<p class="text-justify section-content">The objective of this course is to train students to be able to understand Big Data and Large Data Environments, e.g., file formats, their representation, and how to automatically extract information from large datasets of files. Specifically, students successfully completing this course will achieve three main objectives:
+			    </p>
+			 
+			    <ol class="text-left section-content">
+			      <li>Develop sufficient proficiency in Big Data frameworks to write software capable of automatically extracting information from data including its text and metadata and language.</li>
+			      <li>Develop sufficient proficiency in techniques with Large Data sets collected from the Web and other places (Intranet, Science Data Sets, Public Data Sets).</li>
+			      <li>Develop sufficient proficiency in Python and Java to write and execute software that is “File Aware” and that automatically extracts text and metadata from large data sets.</li>
+			    </ol>
+				</div>
+			</div>
+			
+			<div class="row">
+			   <div class="col-lg-12">
+				<p class="text-justify section-content">The primary teaching methods will be discussion, case studies, and lectures.  Students are expected to perform directed self learning outside of class which encompasses, among other things, a considerable amount of literature review.  In addition, the class will directly leverage open source software and partnerships from the Instructor is a former member of the Board of Directors at the Apache Software Foundation. Projects associated with the course make direct contributions to Apache Licensed (“ALv2”) open source software projects at the student’s discretion. Leadership training in open source is provided and encouraged, and students leave with an experience in open source that makes them more marketable to companies and institutions looking to hire in Big Data, and Data Science.
+				</p>
+
+			    <p class="text-justify section-content">
+				In addition to foundations, and practical experience with Big Data and Data Science, the class will also introduce the student to the state-of-the-art in content detection research, future trends and state-of-the-practice. Students are expected to attend class regularly, and participate (as directed) in all class discussions, and most importantly, have fun!
+			    </p>
+         
+            	</div>
+            	
+            </div>
+       
+        </div>
+    </section>
+
+    <!-- Academic Integrity Section -->
+    <section id="integrity" class="faculty-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading"><font class="usc-color">USC</font> ACADEMIC INTEGRITY</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="section-heading">Statement on Academic Conduct and Support Systems</h3>
+                            <p class="text-justify section-content">
+                              Academic Conduct Plagiarism - presenting someone else's ideas as your own, either verbatim or recast in your own words - is a serious academic offense with serious consequences. Please familiarize yourself with the discussion of plagiarism in SCampus in <a href="https://scampus.usc.edu/1100-behavior-violating-university-standards-and-appropriate-sanctions/ ">Section 11, Behavior Violating University Standards</a>. Other forms of academic dishonesty are equally unacceptable. See additional information in <a href="http://policy.usc.edu/scientific-misconduct/">SCampus and university policies on scientific misconduct</a>. Discrimination, sexual assault, and harassment are not tolerated by the university. You are encouraged to report any incidents to the <a href="http://equity.usc.edu/">Office of Equity and Diversity</a> or to the <a href="http://capsnet.usc.edu/department/department-public-safety/online-forms/contact-us">Department of Public Safety</a>. This is important for the safety whole USC community. Another member of the university community - such as a friend, classmate, advisor, or faculty member - can help initiate the report, or can initiate the report on behalf of another person. The <a href="http://www.usc.edu/student-affairs/cwm/">Center for Women and Men</a> provides 24/7 confidential support, and the sexual assault resource center webpage <a href="mailto:sarc@usc.edu">sarc@usc.edu</a> describes reporting options and other resources.
+							</p>
+							
+							<h3 class="section-heading">Support Systems</h3>
+							<p class="text-justify section-content">
+								A number of USC's schools provide support for students who need help with scholarly writing. Check with your advisor or program staff to find out more. Students whose primary language is not English should check with the <a href="http://dornsife.usc.edu/ali">American Language Institute</a> which sponsors courses and workshops specifically for international graduate students. The <a href="http://sait.usc.edu/academicsupport/centerprograms/dsp/home_index.html">Office of Disability Services and Programs</a> provides certification for students with disabilities and helps arrange the relevant accommodations. If an officially declared emergency makes travel to campus infeasible, <a href="http://emergency.usc.edu/">USC Emergency Information</a> will provide safety and other updates, including ways in which instruction will be continued by means of blackboard, teleconferencing, and other technology.
+							</p>
+							
+							<h3 class="section-heading">Statement on Diversity</h3>
+                            <p class="text-justify section-content">The diversity of the participants in this course is a valuable source of ideas, problem solving strategies, and engineering creativity. We encourage and support the efforts of all of our students to contribute freely and enthusiastically. We are members of an academic community where it is our shared responsibility to cultivate a climate where all students and individuals are valued and where both they and their ideas are treated with respect, regardless of their differences, visible or invisible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
+  <!-- Textbook section -->
+
+  <section id="textbook" class="faculty-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="section-heading">TEXTBOOK</h2>
+          <hr>
+          
+          <p class="text-justify section-content"> Chris A. Mattmann, and Jukka Zitting. Tika in Action, 256 pages. New York: Manning Publications, November 2011. ISBN: 9781935182856. </p>
+          <p class="text-justify section-content">&nbsp;</p>
+          <p class="text-justify section-content">C. Mattmann. Machine Learning with TensorFlow: 2nd Edition. 456 pages. New York: Manning Publications, December 2020. ISBN 9781617297717&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assignments Section -->
+  <section id="assignments" class="about-section fix-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+			<h2 class="section-heading">ASSIGNMENTS and <font class="usc-color">EXAMINATIONS</font></h2>
+          <hr>
+            <table class="table-bordered table-striped table-dark">
+            	<thead class="alert-success">
+            		<td>Name</td>
+            		<td>Description</td>
+            		<td>Weight</td>
+            	</thead>
+                <tr>
+                	<td>Exam</td>
+                	<td>An exam testing your understanding of the lecture materials</td>
+                	<td>25%</td>
+                </tr>                
+                <tr>
+                	<td>Assignments</td>
+                	<td>Assignments where you will build on the Big Data and Data Science topics in course and make a contribution to one of the existing open source frameworks (Tika, Solr, Nutch, TensorFlow, OODT, etc.).</td>
+                	<td>45%</td>
+                </tr>   
+                <tr>
+                	<td>Individual Presentation</td>
+                	<td>An individual presentation demonstrating the student's understanding of one of the required paper readings in the course.</td>
+                	<td>25%</td>
+                </tr>
+                <tr>
+                	<td>Participation</td>
+                	<td>Participation in lectures, by asking questions and contributing to the conversation. Attending lectures (physically and remotely) and positively contributing to the class experience.</td>
+                	<td>5%</td>
+                </tr>
+			</table>
+			
+			<h3 class="section-heading">Project Submission Guidelines</h3>
+			<p class="text-justify section-content">
+			Submission guidelines will be specified in each assignment.	
+			</p>
+
+
+        </div>
+      </div>
+	  </div>
+  </section>
+
+
+  <!-- Schedule section -->
+  <section id="schedule" class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-heading">Schedule <font class="usc-color">(subject to change; check regularly)</font></h2><hr/>
+          <table class="table-bordered table-striped table-dark">
+            	<thead class="alert-success">
+            		<td>Week</td>
+            		<td>Lecture Topic</td>
+            		<td>Assigned Readings</td>
+            		<td>Assignments &amp; Deadlines</td>
+            	</thead>
+            	
+            	<tr>
+            		<td>1<br/><p class="text-emphasis-style" style="font-size:10px;">(Jan 16th, 2025)</p></td>
+            		<td><ul class="text-left">
+            			<li>Course Introduction</li>
+            			<li>Introduction to Big Data</li>
+            			<li>DARPA XDATA Program - Overview Slides</li>
+            			<li>Breakout Groups on Big Data</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 1</li>
+                        <li>Mattmann, Chris. A vision for data science. Nature, Vol. 493, No. 7433, pp. 473-475, January 24, 2013. <strong>(Presented by: )</strong></li>
+                        <li>Lynch, Clifford. "Big data: How do your data grow?." Nature 455.7209 (2008): 28-29.</li>
+                        <li>Howe, Doug, et al. "Big data: The future of biocuration." Nature 455.7209 (2008): 47-50. <strong>(Presented by: )</strong></li>
+                        <li>Wigan, Marcus R., and Roger Clarke. "Big data's big unintended consequences." Computer 46.6 (2013): 46-53. <strong>(Presented by: )</strong></li>
+                        <li>Schwartz, J. A. N. A., et al. "Measuring the value of Big Data exploitation systems: Quantitative, non-subjective metrics with the user as a key component." Parsons Journal for Information Mapping 6 (2014): 1-12.</li>
+                        <li>Sotera Defense Solutions. A Survey of Big Data Methods, Assessments, and Approaches. November 2012</li>
+                        <li>De Mauro, Andrea, Marco Greco, and Michele Grimaldi. "What is big data? A consensual definition and a review of key research topics." AIP conference proceedings. Vol. 1644. No. 1. AIP, 2015. <strong>(Presented by: )</strong></li>
+						</ul>
+           	        </td>
+           	        <td>Resources:<br/><br>
+           	           <ul class="text-left">
+           	           	  <li>DARPA I2O (DARPA Dan) Video</li>
+           	           	  <li>Zero Dark Thirty Workbench Video</li>
+           	           </ul>
+
+           	        </td>
+            	</tr>
+
+            	<tr>
+            		<td>2<br/><p class="text-emphasis-style" style="font-size:10px;">(Jan 23rd, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Report out from Big Data Breakouts</li>
+            			<li>A Taxonomy of File Formats</li>
+						<li>Content Detection Libraries</li>
+                        <li>Language Bindings for Apache Tika</li>
+                        <li>Individual Student Presentations - Week 1 Papers</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 2</li>
+                        <li>Crocker, David. RFC 822 "Standard for the format of ARPA Internet text messages." (1982).</li>   
+                        <li>Freed, Ned and Nathaniel Borenstein. RFC 1341. MIME  (Multipurpose Internet Mail Extensions).  Mechanisms for Specifying and Describing
+                       the Format of Internet Message Bodies. June 1992. <strong>(Presented by: )</strong></li>
+                        <li>Freed, Ned, and Nathaniel Borenstein. RFC 2045. Multipurpose internet mail extensions (MIME) part one: Format of internet message bodies. 1996.</li>
+                        <li>Freed, Ned, and Nathaniel Borenstein. RFC 2046 Multipurpose internet mail extensions (MIME) part two: Media types, November, 1996.</li>
+                        <li>Freed, Ned. RFC 2048 "Multipurpose internet mail extensions (MIME) part four: Registration procedures." ISI (1996).</li>
+                        <li>Hicks, Ben J., et al. "Organizing and managing personal electronic files: A mechanical engineer's perspective." ACM Transactions on Information Systems (TOIS) 26.4 (2008): 23. <strong>(Presented by: )</strong></li>
+                        <li>Jackson, Andrew N. "Formats over time: Exploring UK web history." arXiv preprint arXiv:1210.1714 (2012). <strong>(Presented by: )</strong></li>
+                        		</ul></td>
+           	        <td>&nbsp;</td>
+            	</tr>
+            	
+             	<tr>
+            		<td>3<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(Jan 30th, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Report outs from the in class discussion around classifying files and the MIME taxonomy</li>
+						<li>Document Similarity and Deduplication</li>
+           		        <li>Individual Presentations - Week 2 Papers</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 3</li>
+                        <li>Shim, Jungwon Roy. "Arium: Beyond the Desktop Metaphor: A new way of navigating, searching, and organizing personal digital data." Masters Thesus, Carnegie Mellon University (2012).<strong>(Presented by: )</strong></li>
+                        <li>Crowder, Jerome, Jonathan Marion, and Michele Reilly. "File Naming in Digital Media Research: Examples from the Humanities and Social Sciences." Journal of Librarianship and Scholarly Communication 3.3 (2015). <strong>(Presented by:&nbsp; )</strong></li>
+			<li>Bik, Elisabeth M., Casadevall, Arturo, Fang, Ferrie C. The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications.</li>
+                        <li>Manku, Gurmeet Singh, Arvind Jain, and Anish Das Sarma. "Detecting near-duplicates for web crawling." Proceedings of the 16th international conference on World Wide Web. ACM, 2007. <strong>(Presented by:&nbsp; )</strong></li>
+                        <li>Henzinger, Monika. "Finding near-duplicate web pages: a large-scale evaluation of algorithms." Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval. ACM, 2006. <strong>(Presented by:&nbsp; )</strong> </li>
+                        <li>Cooper, Matthew, Jonathan Foote, and Andreas Girgensohn. "Automatically organizing digital photographs using time and content." Image Processing, 2003. ICIP 2003. Proceedings. 2003 International Conference on. Vol. 3. IEEE, 2003. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Manber, Udi. "Finding similar files in a large file system." Usenix Winter. Vol. 94. 1994.</li>
+						<li>Chim, Hung, and Xiaotie Deng. "Efficient phrase-based document similarity for clustering." IEEE Transactions on Knowledge and Data Engineering 20.9 (2008): 1217-1229. <strong>(Presented by:&nbsp; )</strong></li>
+						</ul>
+           	        </td>
+           	        <td>Resources:&nbsp;<br/><br/><ul classs="text-left">
+           	        	<li><a href="https://www.networkworld.com/article/2199390/uc-voip/the-mime-guys--how-two-internet-gurus-changed-e-mail-forever.html">The MIME guys: How two Internet gurus changed e-mail forever</a></li>
+            		    <li><a href="https://www.youtube.com/watch?v=LOUqh5xw99w">IEEE Computer Interview with Nathaniel Bornstein</a></li>
+           	        </ul></td>
+            	</tr>
+            	
+             	<tr>
+            		<td>4<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(Feb 6th, 2025)</p></td>
+            		<td><ul class="text-left">
+					  <li>Document Type Detection</li>
+				      <li>Individual Presentations - Week 3 papers</li>
+					  <li>Advanced File System Statistics and Understanding</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 4</li>
+					  <li>Amirani, Mehdi Chehel, Mohsen Toorani, and A. Beheshti. A new approach to content-based file type detection. Computers and Communications, 2008. ISCC 2008. IEEE Symposium on. IEEE, 2008 <strong>(Presented by:&nbsp; )</strong> </li>
+					  <li>McDaniel, Mason, and M. Hossain Heydari. Content based file type detection algorithms. System Sciences, 2003. Proceedings of the 36th Annual Hawaii International Conference on. IEEE, 2003.<strong></strong></li>
+					  <li>Alamri, Nasser S., and William H. Allen. "A comparative study of file-type identification techniques." SoutheastCon 2015. IEEE, 2015.<strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Li, Wei-Jen, et al. "Fileprints: Identifying file types by n-gram analysis." Information Assurance Workshop, 2005. IAW'05. Proceedings from the Sixth Annual IEEE SMC. IEEE, 2005. </li>
+					  <li>Shahi, Ashim. "Classifying the classifiers for file fragment classification." Masters Thesis, Universiteit van Amsterdam (2012). <strong>(Presented by: )</strong></li>
+						<li>Ahmed, Irfan, et al. "Fast file-type identification." Proceedings of the 2010 ACM Symposium on Applied Computing. ACM, 2010. </li>
+						<li>Pierris, Georgios, and Stilianos Vidalis. "Forensically classifying files using HSOM algorithms." Emerging Intelligent Data and Web Technologies (EIDWT), 2012 Third International Conference on. IEEE, 2012. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Harris, Ryan M. "Using artificial neural networks for forensic file type identification." Master's Thesis, Purdue University (2007). <strong>(Presented by: )</strong></li>
+						<li>Douceur, John R., and William J. Bolosky. A large-scale study of file-system contents. ACM SIGMETRICS Performance Evaluation Review 27.1 (1999): 59-70.</li>
+						</ul>
+           	        </td>
+           	        <td>Resources:&nbsp;<br/><br/>
+           	          <ul class="text-left">
+           	          	  <li><a href="http://www.economist.com/node/21553445">The Economist - Digital Bit Rot</a></li>
+           	          	  <li><a href="https://www.youtube.com/watch?v=GV0A82TCrf0">Bit Rot - on Digital Vellum (by Vint Cerf, Google) TEDx Talk</a></li>
+           	          </ul></td>
+            	</tr>
+            	
+              	<tr>
+            		<td>5<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(Feb 13th, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Introduction to Assignment 1</li>
+           		        <li>Content Extraction</li>
+                        <li>Individual Presentations - Week 4 papers</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 5</li>
+					  <li>Kilicoglu, Halil, et al. "Semantic MEDLINE: a web application for managing the results of PubMed Searches." Proceedings of the third international symposium for semantic mining in biomedicine. Vol. 2008. 2008. <strong>(Presented by: )</strong></li>
+					  <li>Kobayashi, Mei, and Koichi Takeda. "Information retrieval on the web." ACM Computing Surveys (CSUR) 32.2 (2000): 144-173.<strong>&nbsp;(Presented by: )</strong></li>
+					  <li>Voorhees, Ellen M., and Donna Harman. "Overview of the sixth text retrieval conference (TREC-6)." Information Processing &amp; Management 36.1 (2000): 3-35.<strong>&nbsp;</strong></li>
+					  <li>Arasu, Arvind, and Hector Garcia-Molina. Extracting structured data from web pages. Proceedings of the 2003 ACM SIGMOD international conference on Management of data. ACM, 2003.<strong>(Presented by: )</strong></li>
+					  <li>Lewandowski, Dirk. "Web searching, search engines and Information Retrieval." Information Services &amp; Use 25.3, 4 (2005): 137-147. <strong>(Presented by: )</strong></li>
+						<li>Weninger, Tim, William H. Hsu, and Jiawei Han. "CETR: content extraction via tag ratios." Proceedings of the 19th international conference on World wide web. ACM, 2010. </li>
+						<li>Karpathy, Andrej, and Li Fei-Fei. "Deep visual-semantic alignments for generating image descriptions." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.<strong>(Presented by: )</strong></li>
+					</ul>
+           	        </td>
+           	        <td>Resources:&nbsp;<br/><br/>
+           	          <ul class="text-left">
+           	            <li><a href="https://www.youtube.com/watch?v=m9_EPCYrCzo">Introduction to Information Retrieval - Chris Mattmann</a></li>
+       	              </ul></td>
+            	</tr>
+            	
+                <tr>
+            		<td>6<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(Feb 20th, 2025)</p></td>
+            		<td><ul class="text-left">
+					  <li>Last Week Tonight:&nbsp; Robocalls</li>
+           		      <li>RoboKiller Video</li>
+					  <li>Readouts from the MIME/Parsers discussions</li>
+					  <li>Understanding Metadata</li>							
+				      <li>Individual Presentations - week 5 papers</li>					
+                    </ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 6</li>
+					  <li>Gowda, Thamme, and Chris A. Mattmann. "Clustering Web Pages Based on Structure and Style Similarity (Application Paper)." Information Reuse and Integration (IRI), 2016 IEEE 17th International Conference on. IEEE, 2016. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li> Anquetil, Nicolas, and Timothy Lethbridge. File clustering using naming conventions for legacy systems. Proceedings of the 1997 conference of the Centre for Advanced Studies on Collaborative research. IBM Press, 1997.</li>
+					  <li>Swierk, Edward, et al. "The Roma personal metadata service." Mobile Networks and Applications 7.5 (2002): 407-418. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Karypis, Michael Steinbach George, Vipin Kumar, and Michael Steinbach. "A comparison of document clustering techniques." KDD workshop on Text Mining. 2000. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Marchionini, Gary. "Exploratory search: from finding to understanding." Communications of the ACM 49.4 (2006): 41-46. <strong>(Presented by:&nbsp; )</strong></li>
+						</ul>
+           	        </td>
+           	        <td>Resources:<br/>
+					       <ul>
+						     <li><a href="https://www.youtube.com/watch?v=FO0iG_P0P6M">Last Week Tonight - John Oliver (HBO) - Robocalls</a></li>
+							 <li><a href="https://www.youtube.com/watch?v=KyrhzMOCb4Q">New App to stop Robocalls - RoboKiller</a></li>
+						   </ul>
+					</td>
+            	</tr>   
+            	
+
+           		<tr>
+            		<td>7<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(Feb 27th, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Video - Understanding Metadata TedX talk</li>
+            			<li>Information Clustering</li>
+            			<li>Language Identification</li>
+						<li>Example - Machine Learning with TensorFlow - Activity Clustering (Android)</li>
+            			<li>Week 6 Individual Presentations</li>            			
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 7</li>
+					  <li>Koehn, Philipp, et al. "Moses: Open source toolkit for statistical machine translation." Proceedings of the 45th annual meeting of the ACL on interactive poster and demonstration sessions. Association for Computational Linguistics, 2007. </li>
+					  <li>Post, Matt, et al. "Joshua 5.0: Sparser, better, faster, server." Proceedings of the Eighth Workshop on Statistical Machine Translation. 2013.</li>
+					  <li>Lins, Rafael Dueire, and Paulo Gonçalves. Automatic language identification of written texts. Proceedings of the 2004 ACM symposium on Applied computing. ACM, 2004. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Papineni, Kishore, et al. "BLEU: a method for automatic evaluation of machine translation." Proceedings of the 40th annual meeting on association for computational linguistics. Association for Computational Linguistics, 2002. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Bahdanau, Dzmitry, Kyunghyun Cho, and Yoshua Bengio. "Neural machine translation by jointly learning to align and translate." arXiv preprint arXiv:1409.0473 (2014). <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Tromp, Erik, and Mykola Pechenizkiy. "Graph-based n-gram language identification on short texts." Proc. 20th Machine Learning conference of Belgium and The Netherlands. 2011. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Lopez-Moreno, Ignacio, et al. "Automatic language identification using deep neural networks." Acoustics, Speech and Signal Processing (ICASSP), 2014 IEEE International Conference on. IEEE, 2014. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Bertoldi, Nicola, et al. "MMT: New open source MT for the translation industry." Proceedings of The 20th Annual Conference of the European Association for Machine Translation (EAMT). 2017.</li>
+						</ul>
+           	        </td>
+           	        <td>Resources:&nbsp;<br/><br/>
+           	          <ul class="text-left">
+           	            <li><a href="https://www.youtube.com/watch?v=i2a8pDbCabg">The Power of Metadata: Deepak Jagdish and Daniel Smilkov at TEDxCambridge 2013</a></li>
+       	              </ul></td>
+            	</tr> 	          	           	           				  			             				  			             	           				  			             				  		
+            
+            	<tr>
+            		<td>8<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(March 6, 2025)</p></td>
+            		<td><ul class="text-left">
+						<li>Exam Review</li>
+						<li>Assignment 2</li>
+						<li>Machine Translation (if time)</li>
+            		    <li>Video - Linguistic Forensics</li>					
+            			<li>Week 7 Individual Presentations</li>
+						<li>Week 8 Individual Presentations</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 8</li>
+					  <li>Tjong Kim Sang, Erik F., and Fien De Meulder. "Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition." Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003-Volume 4. Association for Computational Linguistics, 2003.</li>
+					  <li>Nadeau, David, and Satoshi Sekine. "A survey of named entity recognition and classification." Lingvisticae Investigationes 30.1 (2007): 3-26.</li>
+					  <li>Ritter, Alan, Sam Clark, and Oren Etzioni. "Named entity recognition in tweets: an experimental study." Proceedings of the Conference on Empirical Methods in Natural Language Processing. Association for Computational Linguistics, 2011. <strong> (Presented by: ) </strong></li>
+					  <li>Mattmann, Chris A., and Madhav Sharan. "An automatic approach for discovering and geocoding locations in domain-specific web data." Proceedings of the 2016 IEEE 17th International Conference on Information Reuse and Integration (IRI’16). 2016.</li>
+					  <li>Khodak, Mikhail, Nikunj Saunshi, and Kiran Vodrahalli. "A Large Self-Annotated Corpus for Sarcasm." arXiv preprint arXiv:1704.05579 (2017). <strong>(Presented by: )</strong></li>
+					  <li>Hutto, Clayton J., and Eric Gilbert. "Vader: A parsimonious rule-based model for sentiment analysis of social media text." Eighth international AAAI conference on weblogs and social media. 2014. <strong>(Presented by: )</strong></li>
+					     <li>Geyer, Kelly, et al. "Named Entity Recognition in 140 Characters or Less." # Microposts. 2016. <strong>(Presented by: )</strong></li>
+						</ul>
+           	        </td>
+           	        <td>Resources:<br/>
+           	             <ul class="text-left">
+							<li><a href="https://www.youtube.com/watch?v=RS5O4n0TqlU">Forensic Linguistic Profiling &amp; What Your Language Reveals About You | Harry Bradford | TEDxStoke</a></li>
+							<li><a href="https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/">The Shallowness of Google Translate - The Atlantic - Douglas Hofstadter</a></li>
+							 <li>Apache cTAKES</li>
+							 <li>Apache UIMA</li>
+							 <li>Apache OpenNLP</li>
+							 <li>Stanford Core NER/NLP</li>
+							 <li>NLTK</li>
+           	             </ul>  
+           	        </td>
+            	</tr>	 
+            	
+                <tr class="alert-success">
+            		<td>9<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(March 13th, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Exam&nbsp;</li>
+						<li>Discussion</li>				
+						</ul></td>
+					<td>Location:&nbsp; Webex / Online</td>
+           	        <td>Resources:<br/>
+           	             <ul class="text-left">
+           	               <li><a href="https://www.youtube.com/watch?v=NMWXG1RltwU">How to Save the World | Wayne Moses Burke | TEDxBeaconStreet</a></li>
+                      </ul>
+       	           </td>
+            	</tr>  
+                <tr class="alert-danger">
+            		<td>10<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(March 20th, 2025)</p></td>
+            		<td>No Class This Week</td>
+					<td>No Class This Week - Spring Recess March 16-23, 2025</td>
+           	        <td>&nbsp;</td>
+            	</tr>    	
+			    <tr>
+           		  <td>11<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(March 27th, 2025)</p></td>
+            		<td><ul class="text-left">
+            		    <li>Individual Presentations</li>
+            		    <li>Named Entity Recognition</li>
+						<li>Hadoop Spark and Tika: Large Scale Content Detection and Analysis</li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 9</li>
+					  <li>Dean, Jeffrey, and Sanjay Ghemawat. MapReduce: simplified data processing on large clusters. Communications of the ACM 51.1 (2008): 107-113.<strong>(Presented by: )</strong></li>
+					  <li>Zaharia, Matei, et al. Spark: cluster computing with working sets.Proceedings of the 2nd USENIX conference on Hot topics in cloud computing. Vol. 10. 2010. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Elsayed, Tamer, Jimmy Lin, and Douglas W. Oard. "Pairwise document similarity in large collections with MapReduce." Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics on Human Language Technologies: Short Papers. Association for Computational Linguistics, 2008. <strong>(Presented by:&nbsp; )</strong> </li>
+					  <li>M. Bernaschi, M. Cianfriglia, A. Di Marco, A. Sabellico, G. Me, G. Carbone, G. Totaro. Forensic Disk Image Indexing and Search in an HPC environment. IEEE International Conference on High Performance Computing &amp; Simulation (HPCS), 2014.</li>
+					  <li>Meusel, Robert, Peter Mika, and Roi Blanco. "Focused crawling for structured data." Proceedings of the 23rd ACM International Conference on Conference on Information and Knowledge Management. ACM, 2014. <strong> (Presented by:&nbsp; )</strong></li>
+						<li>Niu, Feng, et al. "DeepDive: Web-scale Knowledge-base Construction using Statistical Learning and Inference." VLDS 12 (2012): 25-28. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Mattmann, C. A., Oh, J. H., Palsulich, T., McGibbney, L. J., Gil, Y., &amp; Ratnakar, V. (2015, November). DRAT: An Unobtrusive, Scalable Approach to Large Scale Software License Analysis. In Automated Software Engineering Workshop (ASEW), 2015 30th IEEE/ACM International Conference on (pp. 97-101). IEEE. </li>
+						</ul>
+           	        </td>
+           	        <td>Resources:<br/>
+           	             <ul class="text-left">
+           	             <li><a href="http://github.com/apache/drat/">Apache Distributed Release Audit Tool (DRAT)</a></li>
+           	             <li><a href="https://github.com/apache/drat/wiki/DRAT-Tutorials-Videos">DRAT Video</a></li>
+                        </ul>
+           	        </td>
+            	</tr>       	           	           	           				  			             				  		
+		  			             	           				  			             				
+                <tr>
+            		<td>12<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(April 3, 2025)</p></td>
+            		<td><ul class="text-left">
+						<li>Assignment 3 - Introduction</li>
+            		    <li>Readout - Named Entity Recognition Group Presentations</li>
+						<li>Open Source Content Detection Technologies</li>
+                        <li>Individual Presentations</li>
+            		</ul>
+                    </td>
+					<td><ul class="text-left">
+					     <li>Tika in Action, Chapter 10</li>
+					     <li>Białecki, Andrzej, et al. "Apache lucene 4." SIGIR 2012 workshop on open source information retrieval. 2012. <strong>(Presented by:&nbsp; )</strong></li>
+					     <li>Turtle, Howard, Yatish Hegde, and S. Rowe. "Yet another comparison of lucene and indri performance." SIGIR 2012 Workshop on Open Source Information Retrieval. 2012.</li>
+					     <li>Bontcheva, Kalina, et al. "TwitIE: An Open-Source Information Extraction Pipeline for Microblog Text." RANLP. 2013. <strong>(Presented by:&nbsp; )</strong></li>
+					     <li>Cunningham, Hamish. "GATE, a general architecture for text engineering." Computers and the Humanities 36.2 (2002): 223-254.</li>
+					     <li>Atserias, Jordi, et al. "FreeLing 1.3: Syntactic and semantic services in an open-source NLP library." Proceedings of LREC. Vol. 6. 2006. <strong>(Presented by:&nbsp; )</strong></li>
+					     <li>Manning, Christopher D., et al. "The stanford corenlp natural language processing toolkit." ACL (System Demonstrations). 2014. <strong>(Presented by:&nbsp; )</strong></li>
+					     <li>Savova, Guergana K., et al. "Mayo clinical Text Analysis and Knowledge Extraction System (cTAKES): architecture, component evaluation and applications." Journal of the American Medical Informatics Association 17.5 (2010): 507-513.&nbsp; <strong>(Presented by:&nbsp; )</strong></li>
+						</ul>
+           	        </td>
+					<td>Resources:<br/>
+					<ul class="text-left">
+				        <li><a href="https://www.youtube.com/watch?v=8DqQCZMawNg">TedXTalk Analyzing and modeling complex and big data | Professor Maria Fasli | TEDxUniversityofEssex</a></li>
+					    <li>Textract</li>
+						<li>Scrapy</li>
+                        <li>Mattmann ApacheCon 2015 Content Talk</li>
+				  </ul></td>
+            	</tr>        
+            	
+                <tr>
+            		<td>13<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(April 10th, 2025)</p></td>
+            		<td><ul class="text-left">
+						<li>Ted Talk (click link in resources)</li>
+						<li>Evaluating Content Detection</li>
+						<li>Walkthrough of Polar Deep Insights</li>
+						<li>Individual Presentations </li>
+            		</ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 11</li>
+					  <li>Nowell, Lucy Terry, et al. "Visualizing search results: some alternatives to query-document similarity." Proceedings of the 19th annual international ACM SIGIR conference on Research and development in information retrieval. ACM, 1996. <strong>&nbsp; (Presented by:&nbsp; )</strong></li>
+					  <li>Shneiderman, Ben. "The eyes have it: A task by data type taxonomy for information visualizations." Visual Languages, 1996. Proceedings., IEEE Symposium on. IEEE, 1996. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Gottron, Thomas. "Evaluating content extraction on HTML documents." Proceedings of the 2nd International Conference on Internet Technologies and Applications (ITA’07). 2007. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Leuski, Anton. "Evaluating document clustering for interactive information retrieval." Proceedings of the tenth international conference on Information and knowledge management. ACM, 2001. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Bailey, Peter, et al. "Evaluating search systems using result page context." Proceedings of the third symposium on Information interaction in context. ACM, 2010.</li>
+					</ul>
+           	        </td>
+           	        <td>Resources:<br/>
+           	          <ul class="text-left"><li><a href="https://www.youtube.com/watch?v=_QdPW8JrYzQ">This is What happens when you reply to SPAM e-Mail. - James Veitch  - Ted Talk</a></li>
+						<li><a href="http://polar.usc.edu/">USC IRDS Polar Data Science website</a></li>
+						</ul></td>
+            	</tr>    
+            	
+                <tr>
+            		<td>14<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(April 17h, 2025)</p></td>
+            		<td><ul class="text-left">
+						<li>Group Readouts on Evaluating Content Detection and Analysis</li>
+						<li>Lecture on NoSQL</li>
+						<li>Lecture on SciSpark</li>
+						<li>Individual Presentations</li>
+            		</ul>
+            		</td>
+					<td><ul class="text-left">
+					  <li>Palamuttam, Rahul, et al. "SciSpark: Applying in-memory distributed computing to weather event detection and tracking." Big Data (Big Data), 2015 IEEE International Conference on. IEEE, 2015. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Leavitt, Neal. "Will NoSQL databases live up to their promise?." Computer 43.2 (2010). <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Stonebraker, Michael. "SQL databases v. NoSQL databases." Communications of the ACM 53.4 (2010): 10-11. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Stonebraker, Michael. "Stonebraker on NoSQL and enterprises." Communications of the ACM 54.8 (2011): 10-11. <strong>(Presented by:&nbsp; )</strong></li>
+					  <li>Rafique, Ansar, et al. "On the performance impact of data access middleware for nosql data stores." IEEE Transactions on Cloud Computing (2015).</li>
+						<li>Moniruzzaman, A. B. M., and Syed Akhter Hossain. "Nosql database: New era of databases for big data analytics-classification, characteristics and comparison." arXiv preprint arXiv:1307.0191 (2013). <strong>(Presented by:&nbsp; )</strong> </li>
+						</ul>
+           	        </td>
+           	        <td>Resources:<br/>
+
+                          <ul>
+                            <li><a href="https://www.youtube.com/watch?v=4SK8jdBhGNI">2019 MIT Citi - 3 - Top Ten Big Data Blunders - Michael Stonebraker <font color="red">(Only watch first 15m)</font></a></li>
+			    <li><a href="https://www.coursera.org/lecture/data-manipulation/nosql-rebuttal-Oy7yz">Data Manipulation at Scale - NoSQL rebuttal</a></li>
+			  </ul>
+			</td>
+            	</tr> 		  
+            <tr>
+            		<td>15<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(April 24th, 2025)</p></td>
+            		<td><ul class="text-left">
+           		        <li>Video - Scientific Data: Water and Snow in the Western US</li>
+           		        <li>Searching Scientific Datasets</li>
+            		    <li>Scientific Data Processing (Airborne Snow Observatory)</li>
+       		          <li>Individual Presentations</li>
+           		        <li>Big Data with an Eye Towards the Future: Discussion&nbsp;</li>
+                </ul></td>
+					<td><ul class="text-left"><li>Tika in Action, Chapter 12 - 14</li>
+                        <li>C. Mattmann, D. Freeborn, D. Crichton, B. Foster, A. Hart, D. Woollard, S. Hardman, P. Ramirez, S. Kelly, A. Y. Chang, C. E. Miller. A Reusable Process Control System Framework for the Orbiting Carbon Observatory and NPP Sounder PEATE missions. In Proceedings of the 3rd IEEE Intl Conference on Space Mission Challenges for Information Technology (SMC-IT 2009), pp. 165-172, July 19 - 23, 2009.
+						</li>
+                        <li>Wilkinson, Mark D., et al. "The FAIR Guiding Principles for scientific data management and stewardship." Scientific data 3 (2016): 160018. <strong>(Presented by:&nbsp; )</strong></li>
+                        <li>Buneman, Peter, et al. "Archiving scientific data." ACM Transactions on Database Systems (TODS) 29.1 (2004): 2-42. <strong>(Presented by: )</strong> </li>
+                        <li>Fox, Peter, and James Hendler. "Changing the equation on scientific data visualization." Science 331.6018 (2011): 705-708.<strong>(Presented by:&nbsp; )</strong></li>
+                        <li>Plale, Beth, et al. "Active management of scientific data." IEEE Internet Computing 9.1 (2005): 27-34.  <strong>(Presented by:&nbsp; )</strong></li>
+                        <li>Gray, Jim, et al. "Scientific data management in the coming decade." ACM SIGMOD Record 34.4 (2005): 34-41. <strong>(Presented by:&nbsp; )</strong></li>
+						<li>Ailamaki, Anastasia, Verena Kantere, and Debabrata Dash. "Managing scientific data." Communications of the ACM 53.6 (2010): 68-78.</li>
+						</ul>
+           	        </td>
+           	        <td>Resources:&nbsp;<br/>
+           	           <ul class="text-left">
+           	           	 <li><a href="https://www.youtube.com/watch?v=uOIHjoUEUwE">Thomas Painter of NASA JPL speaks at TEDxIS on a thought provoking take on Climate Change.</a></li>
+           	           </ul></td>
+            	</tr>    			  
+            
+                <tr>
+            		<td>16<br/>
+           		    <p class="text-emphasis-style" style="font-size:10px;">(May 1, 2025)</p></td>
+            		<td><ul class="text-left">
+						<li>Big Data with an Eye Towards the Future: Discussion</li>
+            		</ul></td>
+					<td><ul class="text-left">
+					      <li>No required papers!</li>
+						</ul>
+           	        </td>
+           	        <td>&nbsp;</td>
+            	</tr>         	       	     	  			       	  			         	     	  			       	  			         	     	  			       	  			  
+			</table>
+        </div>
+      </div>
+	</div>
+  </section>
+
+    <!-- jQuery -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="../../js/jquery.easing.min.js"></script>
+    <script src="../../js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
