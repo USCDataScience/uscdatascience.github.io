@@ -19,6 +19,13 @@
       "photo": "images/headshots/deepanshu-jain.jpeg",
       "url": "https://www.linkedin.com/in/deepanshu-jain-01/"
     },
+
+    "sumeet": {
+      "name": "Sumeet Batra",
+      "email": "ssbatra@usc.edu",
+      "photo": "images/headshots/sumeet-batra.jpg",
+      "url": "https://www.linkedin.com/in/sumeetbatra"
+    },
 	  
     "suchith":{
       "name": "Suchith Prathapaneni",
@@ -490,7 +497,8 @@
     {"id": "srinidhi", "terms": ["Spring 2017", "Summer 2018"]},
     {"id": "prerana", "terms": ["Summer 2018", "Fall 2018"]},
     {"id": "suchith", "terms": ["Spring 2023"]},
-    {"id": "deepanshu", "terms": ["Spring 2024", "Spring 2025"]}	  
+    {"id": "deepanshu", "terms": ["Spring 2024", "Spring 2025"]},
+    {"id": "sumeet", "terms":  ["Spring 2025"]}
 	  
 	  
   ]
