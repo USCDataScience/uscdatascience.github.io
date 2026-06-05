@@ -9,6 +9,7 @@ body {
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     /*font-weight: 700;*/
+    overflow-x: hidden;
 }
 
 html {
@@ -151,10 +152,10 @@ img {
 }
 
 .project-item {
-  min-height: 400px;
+  min-height: 0;
 }
 
-#projects .carousel-caption h3, #news .carousel-caption h3 {
+#projects .carousel-caption h3, #classes .carousel-caption h3 {
   font-size: 1.1em;
 }
 
@@ -188,11 +189,134 @@ p.news-item {
 }
 
 /* Carousel */
-#intro .carousel, #intro .item{max-height:650px;}
-#intro .carousel-inner{max-height:650px;}
+#intro {
+  padding-top: 80px;
+}
 
+#intro .carousel,
+#intro .carousel-inner,
+#intro .item {
+  width: 100%;
+  height: min(72vh, 650px);
+  min-height: 430px;
+  overflow: hidden;
+}
 
-#news .carousel, #news .item, #news .carousel-inner, #gallery .carousel, #gallery .item, #gallery .carousel-inner{min-height:500px; max-height:500px;}
+#intro .item > img,
+#intro .item > center > img,
+#intro .item .carousel-feature-image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+#intro .item.intro-logo-slide {
+  background: #10253f;
+}
+
+#intro .item.intro-logo-slide .carousel-feature-image {
+  object-fit: contain;
+  padding: 80px 12%;
+}
+
+#intro .carousel-caption {
+  right: 8%;
+  left: 8%;
+  bottom: 28px;
+  padding: 12px 18px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 4px;
+}
+
+#intro .carousel-caption h3 {
+  margin: 4px 0;
+}
+
+#classes .carousel, #classes .item, #classes .carousel-inner, #gallery .carousel, #gallery .item, #gallery .carousel-inner{min-height:500px; max-height:500px;}
+
+#projects {
+  padding-bottom: 70px;
+}
+
+.project-card {
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid #e4dfd2;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.project-card img {
+  width: 100%;
+  height: 230px;
+  margin-top: 0;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 22px;
+  text-align: left;
+}
+
+.project-card-body h3 {
+  margin-top: 0;
+  color: #990000;
+  font-weight: 700;
+}
+
+.project-card-body p {
+  min-height: 0;
+}
+
+.classes-list {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.classes-list li {
+  margin-bottom: 14px;
+  padding: 16px 18px;
+  background: #fff;
+  border-left: 5px solid #990000;
+  border-radius: 4px;
+}
+
+.classes-list a {
+  font-weight: 700;
+}
+
+.classes-list span {
+  display: block;
+  color: #555;
+  margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+  #intro {
+    padding-top: 50px;
+  }
+
+  #intro .carousel,
+  #intro .carousel-inner,
+  #intro .item {
+    height: 58vh;
+    min-height: 360px;
+  }
+
+  #intro .carousel-caption h3 {
+    font-size: 14px;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+}
 
 
 /* Navigation Bar */

@@ -98,7 +98,7 @@
                           <a class="page-scroll" href="#projects">PROJECTS</a>
                       </li>
                       <li>
-                          <a class="page-scroll" href="#news">NEWS</a>
+                          <a class="page-scroll" href="#classes">CLASSES</a>
                       </li>
                      
                       <li>
@@ -119,7 +119,11 @@
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
           </ol>
 
           <!-- Wrapper for slides -->
@@ -138,7 +142,7 @@
             </div>
 
             <div class="item">
-              <center><img src="http://news.usc.edu/files/2016/05/DG_Mattmann_web-412x618.gif" alt="Dr. Chris Mattmann">
+              <img src="images/banners/panama-papers-mattmann.jpg" alt="Dr. Chris Mattmann">
               <div class="carousel-caption">
                 <h3>USC/JPL scientist made big data stories possible on The Panama Papers
                     <a href="http://news.usc.edu/99878/uscjpl-scientist-made-big-data-stories-possible-on-the-panama-papers" target="_blank">Apache Tika used to extract data from the Panama Papers</a>
@@ -146,8 +150,7 @@
               </div>
             </div>
             <div class="item">
-              <center><img src="https://www.211la.org/sites/default/files/chris-mattman.jpg
-" alt="Dr. Chris Mattmann">
+              <img src="images/headshots/chris-lensa-ai-jan2023.png" alt="Dr. Chris Mattmann">
               <div class="carousel-caption">
                 <h3>USC - Information Retrieval and Data Science Group</h3>
               </div>
@@ -155,7 +158,7 @@
 
 
             <div class="item">
-              <img src="https://pbs.twimg.com/media/Cb2LwzZUUAAj0hG.jpg" alt="Dr. Chris Mattmann">
+              <img src="images/prof-chris-mattmann.jpg" alt="Dr. Chris Mattmann presenting at WSDM 2016">
               <div class="carousel-caption">
                 <h3>
                   Professor Chris Mattmann presenting multimedia metadata based
@@ -168,7 +171,7 @@
               <div class="col-md-12">
                 <br/><br/><br/><br/><br/><br/>
                 <img class="news-item"
-                  src="https://2016.foss4g-na.org/sites/all/themes/eclipsecon_base/themes/foss4g2016/logo.png"
+                  src="images/projects/polar-project.png"
                   alt="GeoParser" height="200px;">
                 <div class="row filler-height"></div>
                 <div class="carousel-caption">
@@ -183,7 +186,7 @@
           <div class="item">
                 <div class="col-md-12">
                   <div class="col-md-12">
-                      <img class="news-item" src="https://www.tacc.utexas.edu/tacc-new-theme/images/logo.svg"
+                      <img class="news-item carousel-feature-image" src="images/banners/tacc-ssi.svg"
                         alt="TACC Summer Supercomputing Institute (SSI)" height="250px;">
                   </div>
 
@@ -337,139 +340,93 @@ Yao-Yi Chiang is an Associate Professor (Research) in Spatial Sciences, the Dire
     </div>
   <!-- Projects Section -->
 
-  <br><br>
   <section id="projects" class="faculty-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="section-heading" style="margin-top: 10.5cm;">PROJECTS</h2>
+          <h2 class="section-heading">PROJECTS</h2>
           <hr>
         </div>
       </div>
       <div class="row">
-        <div id="carousel-project" class="carousel slide" data-ride="carousel">
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <!-- Template for one project start -->
-              <div class="col-md-6 project-item">
-                <img src="https://c2.staticflickr.com/2/1668/25400858655_5fbb4060d8_c.jpg"
-                  alt="GeoParser" class="image-fit">
-                <div class="carousel-caption">
-                  <h3>GeoParser - Tika based Geospatial extractor</h3>
-                  <h3>
-                    <a href="https://github.com/MBoustani/GeoParser" target="_blank">https://github.com/MBoustani/GeoParser</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- Template for one project ends -->
-              <div class="col-md-6 project-item">
-                <img src="https://c2.staticflickr.com/2/1608/25310171351_da0b0498af_c.jpg"
-                  alt="Khooshe" class="image-fit">
-                <div class="carousel-caption">
-                  <h3>Khooshe - Visualizing Big Data
-                    <a href="http://smadha.github.io/khooshe_openlayers.html" target="_blank">(DEMO)</a> </h3>
-                    <a href="https://github.com/MBoustani/Khooshe" target="_blank">https://github.com/MBoustani/Khooshe</a>
-                  </h3>
-                </div>
-              </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/projects/polar-project.png" alt="Polar.usc.edu project">
+            <div class="project-card-body">
+              <h3>Polar.usc.edu</h3>
+              <p class="text-justify">Student data science work around polar science collections, metadata extraction, search, enrichment, and visualization.</p>
+              <p><a class="btn btn-primary" href="http://irds.usc.edu/polar.usc.edu/" target="_blank">Open Polar.usc.edu</a></p>
             </div>
-            <div class="item">
-              <div class="col-md-6 project-item">
-                <img src="https://c2.staticflickr.com/2/1521/25377425506_6ae19fb5be.jpg"
-                  alt="NaMoStats" class="image-fit">
-                <div class="carousel-caption">
-                  <h3 class="font-black">IRDS analyzed elections. #HackTech2016</h3>
-                  <h3>
-                    <a
-                      href="http://devpost.com/software/namostats-analyzing-2016-us-presidential-elections-glv6df"
-                      target="_blank">NaMoStats Devpost Blog</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-6 project-item">
-                  <h3>Lucene Geo-Gazetteer</h3> <br/>
-                  <div>
-                    <p class="text-justify">
-                      A command line gazetteer built around the Geonames.org dataset, that uses
-                      the Apache Lucene library to create a searchable gazetter.
-                    </p>
-                    <p class="text-justify">The Geonames.org dataset contains over 10,000,000 geographical names
-                      corresponding to over 7,500,000 unique features. Beyond names of places in
-                      various languages, data stored include latitude, longitude, elevation,
-                      population, administrative subdivision and postal codes. All coordinates use the
-                      World Geodetic System 1984 (WGS84).</p>
-                  </div>
-
-                  <div class="carousel-caption">
-                    <h3>
-                      <a href="https://github.com/chrismattmann/lucene-geo-gazetteer"
-                        target="_blank">https://github.com/chrismattmann/lucene-geo-gazetteer</a>
-                    </h3>
-                  </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/projects/ufo-project.png" alt="Ufo.usc.edu project">
+            <div class="project-card-body">
+              <h3>Ufo.usc.edu</h3>
+              <p class="text-justify">Interactive visualizations and search experiences for UFO sighting records, built from student teams' D3 and data exploration work.</p>
+              <p><a class="btn btn-primary" href="http://irds.usc.edu/ufo.usc.edu/" target="_blank">Open Ufo.usc.edu</a></p>
             </div>
-            <div class="item">
-              <div class="col-md-6 project-item">
-                <img src="images/screenshots/clustering1.png"
-                  alt="Autoextractor" class="image-fit">
-                <div class="carousel-caption">
-                  <h3 class="font-black">Auto-Extractor - Clustering web pages</h3>
-                  <h3>
-                    <a href="https://github.com/USCDataScience/autoextractor"
-                      target="_blank">https://github.com/USCDataScience/autoextractor</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-6 project-item">
-                <h3>DRAT - Distributed Release Audit Tool</h3> <br/>
-                <div>
-                  <p class="text-justify">
-                    A distributed, parallelized (Map Reduce) wrapper around Apache™ RAT (Release Audit Tool). RAT is used to check for proper licensing in software projects. However, RAT takes a prohibitively long time to analyze large repositories of code, since it can only run on one JVM. Furthermore, RAT isn't customizable by file type or file size and provides no incremental output. This wrapper dramatically speeds up the process by leveraging Apache™ OODT to parallelize the workflow.
-                  </p>
-                </div>
-                  <div class="carousel-caption">
-                    <h3>
-                      <a href="https://github.com/chrismattmann/drat"
-                        target="_blank">https://github.com/chrismattmann/drat</a>
-                    </h3>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/projects/phishing-project.png" alt="Phishing.usc.edu project">
+            <div class="project-card-body">
+              <h3>Phishing.usc.edu</h3>
+              <p class="text-justify">Phishing and fraudulent email visualizations covering message timing, attacker vocabulary, social-engineering cues, and similarity patterns.</p>
+              <p><a class="btn btn-primary" href="http://irds.usc.edu/phishing.usc.edu/" target="_blank">Open Phishing.usc.edu</a></p>
             </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-project" role="button"
-              data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
-              aria-hidden="true"></span> <span class="sr-only">Back</span>
-            </a> <a class="right carousel-control" href="#carousel-project" role="button"
-              data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
-              aria-hidden="true"></span> <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- News Section -->
+  <!-- Classes Section -->
   <hr>
-  <section style="margin-top: 6cm;" id="news" class="about-section fix-height">
+  <section id="classes" class="about-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2 class="section-heading" style="margin-top:7cm;">NEWS</h2>
+          <h2 class="section-heading">CLASSES</h2>
           <hr>
         </div>
       </div>
-      <div class = "row">
-          <div class="tickerwrap tick1">
-            <ul>
-              <li><b><u>April 2018</u>  : Poster Abstract for the 2018 EarthCube All Hands Meeting has been accepted.</b></li>
-              <li ><b><u>April 2018</u>  : IRDS students Srinidhi Nandakumar and Gayathri Ravichandran win 2018 Viterbi Graduate Hackathon.</b> </li>
-            </ul>
-          </div>
-    </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="classes-list">
+            <li>
+              <a href="http://irds.usc.edu/classes/dsci550_2025b/">DSCI 550: Data Science at Scale</a>
+              <span>Spring 2025 course site with syllabus, assignments, schedule, and course resources.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/dsci550_2025a/">DSCI 550: Data Science at Scale</a>
+              <span>Spring 2025 course site with web-scale data science, content detection, and large-scale analytics material.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/dsci550_2024a/">DSCI 550: Data Science at Scale</a>
+              <span>Spring 2024 offering of DSCI 550.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/dsci550_2023a/">DSCI 550: Data Science at Scale</a>
+              <span>Spring 2023 offering of DSCI 550.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/dsci550_2021a/">DSCI 550: Data Science at Scale</a>
+              <span>Spring 2021 phishing-focused web data visualization assignment and course material.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/inf550_2020a/">INF 550: Data Science at Scale</a>
+              <span>Spring 2020 offering of INF 550.</span>
+            </li>
+            <li>
+              <a href="http://irds.usc.edu/classes/cs599_2018a/">CSCI 599: Content Detection and Analysis for Big Data</a>
+              <span>Spring 2018 course site for content detection, search, and large data analysis.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
   </section>
 
 

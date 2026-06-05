@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">TACC Summer Supercomputing Institute</title>
+  <desc id="desc">A local replacement banner for the TACC Summer Supercomputing Institute carousel item.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#10253f"/>
+      <stop offset="0.55" stop-color="#1f4f7a"/>
+      <stop offset="1" stop-color="#e86a33"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffcc00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <g opacity="0.25" stroke="#fff" stroke-width="1">
+    <path d="M110 120h980M110 190h980M110 260h980M110 330h980M110 400h980"/>
+    <path d="M170 70v380M280 70v380M390 70v380M500 70v380M610 70v380M720 70v380M830 70v380M940 70v380M1050 70v380"/>
+  </g>
+  <g stroke="#fff" stroke-width="3" opacity="0.85">
+    <path d="M170 340 305 225 438 292 582 168 740 232 872 142 1030 262" fill="none"/>
+    <path d="M220 250 345 330 530 218 685 292 830 205 990 330" fill="none" opacity="0.6"/>
+  </g>
+  <g fill="url(#node)">
+    <circle cx="170" cy="340" r="13"/>
+    <circle cx="305" cy="225" r="13"/>
+    <circle cx="438" cy="292" r="13"/>
+    <circle cx="582" cy="168" r="13"/>
+    <circle cx="740" cy="232" r="13"/>
+    <circle cx="872" cy="142" r="13"/>
+    <circle cx="1030" cy="262" r="13"/>
+  </g>
+  <g transform="translate(108 82)" fill="#fff">
+    <rect x="0" y="0" width="220" height="66" rx="8" fill="rgba(0,0,0,0.28)"/>
+    <text x="26" y="45" font-family="Montserrat,Arial,sans-serif" font-size="32" font-weight="700">TACC SSI</text>
+  </g>
+  <g transform="translate(750 355)" fill="#fff" opacity="0.95">
+    <rect x="0" y="0" width="310" height="70" rx="8" fill="rgba(0,0,0,0.28)"/>
+    <text x="24" y="44" font-family="Montserrat,Arial,sans-serif" font-size="24" font-weight="700">HPC + Data Analytics</text>
+  </g>
+</svg>
